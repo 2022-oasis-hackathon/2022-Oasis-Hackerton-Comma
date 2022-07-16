@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>172692179767-lr4dt855s0vj3jpb7kst96gjs87e6m7n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.172692179767-lr4dt855s0vj3jpb7kst96gjs87e6m7n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyARP_hwdUgzXI4syuPWgplzn9ynexR7hQc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>172692179767</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.LittleForest.Comma</string>
+	<key>PROJECT_ID</key>
+	<string>asis-hackerton</string>
+	<key>STORAGE_BUCKET</key>
+	<string>asis-hackerton.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:172692179767:ios:89371399b1a48ef221e8b2</string>
+</dict>
+</plist>
