@@ -22,6 +22,7 @@ target 'Comma' do
   pod 'Firebase/Crashlytics'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'lottie-ios'
   install_all_flutter_pods(flutter_application_path)
 end
 

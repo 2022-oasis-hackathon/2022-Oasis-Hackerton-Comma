@@ -12,6 +12,7 @@ import FlutterPluginRegistrant
 class MainVC: UIViewController {
     override func viewDidLoad() {
        super.viewDidLoad()
+        
        let button = UIButton(type:UIButton.ButtonType.custom)
        button.addTarget(self, action: #selector(showFlutterRoute), for: .touchUpInside)
        button.setTitle("Show Flutter!", for: UIControl.State.normal)
