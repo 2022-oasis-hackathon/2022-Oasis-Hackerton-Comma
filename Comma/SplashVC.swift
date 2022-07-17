@@ -17,7 +17,7 @@ class SplashVC: UIViewController {
         animationView!.frame = view.bounds
         animationView!.contentMode = .center
         animationView!.loopMode = .playOnce
-        animationView!.animationSpeed = 1.00
+        animationView!.animationSpeed = 1.20
         view.addSubview(animationView!)
         animationView!.play {_ in
         let Storyboard = UIStoryboard.init(name: "Main", bundle: nil)
