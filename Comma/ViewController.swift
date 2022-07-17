@@ -30,7 +30,7 @@ class ViewController: UIViewController {
        self.view.addSubview(button2)
    }
    @objc func showFlutterRoute() {
-       let flutterVC = CommaFlutterViewController(withEntrypoint: nil, route: "/comma")
+       let flutterVC = CommaFlutterVC(withEntrypoint: nil, route: "/comma")
 
        self.present(flutterVC, animated: true, completion: nil)
        
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
    }
    
    @objc func showFlutterEntry() {
-       let flutterVC = CommaFlutterViewController(withEntrypoint: nil, route: "/")
+       let flutterVC = CommaFlutterVC(withEntrypoint: nil, route: "/")
        self.present(flutterVC, animated: true, completion: nil)
        
        // Storyboard에서 NavigationController import

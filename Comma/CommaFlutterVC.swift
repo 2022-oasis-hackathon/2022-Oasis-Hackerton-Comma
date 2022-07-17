@@ -16,7 +16,7 @@ import Foundation
  @interface FlutterViewController : UIViewController <FlutterTextureRegistry, FlutterPluginRegistry>
  #endif
  */
-class CommaFlutterViewController: FlutterViewController{
+class CommaFlutterVC: FlutterViewController{
     private var flutterEngine: FlutterEngine?
     private var methodChnnel: FlutterMethodChannel?
     
