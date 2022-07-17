@@ -12,14 +12,12 @@ import FlutterPluginRegistrant
 
 @UIApplicationMain
 class AppDelegate: FlutterAppDelegate {
-    lazy var flutterEngine = FlutterEngine(name: "comma flutter engine")
+    let engines = FlutterEngineGroup(name: "multiple-flutters", project: nil)
 
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
 
-        flutterEngine.run();
-        GeneratedPluginRegistrant.register(with: self.flutterEngine);
-        return super.application(application, didFinishLaunchingWithOptions: launchOptions);
+        return true
       }
     
     // MARK: UISceneSession Lifecycle
