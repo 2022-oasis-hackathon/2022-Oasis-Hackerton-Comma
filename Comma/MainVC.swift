@@ -9,7 +9,7 @@ import UIKit
 import Flutter
 import FlutterPluginRegistrant
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
     override func viewDidLoad() {
        super.viewDidLoad()
        let button = UIButton(type:UIButton.ButtonType.custom)
