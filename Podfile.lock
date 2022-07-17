@@ -417,6 +417,11 @@ PODS:
   - FirebaseStorage (8.10.0):
     - FirebaseCore (~> 8.0)
     - GTMSessionFetcher/Core (~> 1.5)
+  - Flutter (1.0.0)
+  - flutter_comma (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - GoogleAppMeasurement (8.10.0):
     - GoogleAppMeasurement/AdIdSupport (= 8.10.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.6)
@@ -515,6 +520,9 @@ DEPENDENCIES:
   - Firebase/Crashlytics
   - Firebase/Firestore
   - Firebase/Storage
+  - Flutter (from `flutter_comma/.ios/Flutter/engine`)
+  - flutter_comma (from `flutter_comma/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `flutter_comma/.ios/Flutter/FlutterPluginRegistrant`)
   - RxCocoa
   - RxGesture
   - RxKeyboard
@@ -555,6 +563,14 @@ SPEC REPOS:
     - SwiftDate
     - SwiftyJSON
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: flutter_comma/.ios/Flutter/engine
+  flutter_comma:
+    :path: flutter_comma/.ios/Flutter
+  FlutterPluginRegistrant:
+    :path: flutter_comma/.ios/Flutter/FlutterPluginRegistrant
+
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
@@ -568,6 +584,9 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 0e7321a508cc9de54316ec45400caba6b5719beb
   FirebaseInstallations: 830327b45345ffc859eaa9c17bcd5ae893fd5425
   FirebaseStorage: 815410224b548172c578f02554a86bbc8f817f50
+  Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
+  flutter_comma: 824a96b848b618e869570b3e3b4fab55f9340f34
+  FlutterPluginRegistrant: d3a0fbc12bc47787a12fcc919193f3959aa7d5ad
   GoogleAppMeasurement: a3311dbcf3ea651e5a070fe8559b57c174ada081
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: 684ee790a24f73ebb2d1d966e9711c203f2a4237
@@ -586,6 +605,6 @@ SPEC CHECKSUMS:
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 372853bd426d8b8f97f990037080e49be82db84a
+PODFILE CHECKSUM: 7e048696612e6f256e809249057f04e209605aac
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
