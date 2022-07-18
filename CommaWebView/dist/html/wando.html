@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css" integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"type="text/css" href="../css/wando.css">
+  <link href="http://fonts.cdnfonts.com/css/nanummyeongjo" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
+    integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="../css/wando.css">
   <title>Wando</title>
 </head>
+
 <body>
   <div id="fullpage">
     <div class="section" data-anchor="videoSection">
-      <video autoplay muted loop id="backgroundVideo">
+      <video autoplay muted loop playsinline id="backgroundVideo">
         <source src="../videos/Wando.mp4" type="video/mp4">
       </video>
       <div class="over-video">
-        <div class="over-string">WANDO</div>
+        <div class="over-img-box">
+          <img class="over-video-string-img" src="../images/wando_img.svg" alt="wando_text">
+        </div>
         <div class="over-scroll-box">
-          <div class="over-sub-title">: 빙그레 웃는 마을, 지붕 없는 자연 갤러리</div>
           <div class="over-scroll">
             <div>
               <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.5 2.93073e-07C10.0857 0.0107741 9.73055 0.150833 9.41094 0.441724L0.40248 8.8237C0.142052 9.0715 -7.15822e-08 9.36239 -5.60413e-08 9.71792C-2.44887e-08 10.4398 0.615558 11 1.40868 11C1.78749 11 2.14262 10.8599 2.41488 10.6121L10.5 3.07052L18.5851 10.6121C18.8574 10.8599 19.2007 11 19.5913 11C20.3844 11 21 10.4398 21 9.71792C21 9.37316 20.8579 9.0715 20.5975 8.8237L11.5772 0.441724C11.2694 0.140059 10.9143 2.74963e-07 10.5 2.93073e-07Z" fill="white"/>
+                <path
+                  d="M10.5 2.93073e-07C10.0857 0.0107741 9.73055 0.150833 9.41094 0.441724L0.40248 8.8237C0.142052 9.0715 -7.15822e-08 9.36239 -5.60413e-08 9.71792C-2.44887e-08 10.4398 0.615558 11 1.40868 11C1.78749 11 2.14262 10.8599 2.41488 10.6121L10.5 3.07052L18.5851 10.6121C18.8574 10.8599 19.2007 11 19.5913 11C20.3844 11 21 10.4398 21 9.71792C21 9.37316 20.8579 9.0715 20.5975 8.8237L11.5772 0.441724C11.2694 0.140059 10.9143 2.74963e-07 10.5 2.93073e-07Z"
+                  fill="white" />
               </svg>
             </div>
             <div>Scroll</div>
@@ -29,9 +37,40 @@
         </div>
       </div>
     </div>
-    <div class="section" data-anchor="video"></div>
+    <div class="section" data-anchor="cource">
+      <div class="tab-box">
+        <div class="tab">
+          <button class="tablinks active" onclick="openCity(event, 'Cource')">코스</button>
+          <button class="tablinks" onclick="openCity(event, 'Comunity')">커뮤니티</button>
+        </div>
+
+        <div id="Cource" class="tabcontent" style="display: block;">
+          <div>콤마 가이드들이 추천하는 하루여행 코스의 사진을 보고, 관심있는 코스 정보를 구매할 수 있어요.</div>
+          <div class="cource-box">
+            <div class="background-img" id="cource_1">
+              <img src="../images/wando_1.png" alt="">
+            </div>
+            <div class="background-img">
+              <img src="../images/wando_1.png" alt="">
+            </div>
+            <div class="background-img">
+              <img src="../images/wando_1.png" alt="">
+            </div>
+        </div>
+
+        <div id="Comunity" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
+    integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="../js/wando.js"></script>
 </body>
+
 </html>

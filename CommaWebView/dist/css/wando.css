@@ -34,7 +34,6 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column-reverse;
-  margin-top: -60px;
 }
 
 .over-sub-title {
@@ -42,6 +41,71 @@ body {
   height: 100%;
   margin-top: -50px;
   position: fixed;
-  transform: translateY(calc(50% + 22px));
+  transform: translateY(calc(50% + 50px));
   width: 100%;
+  font-family: 'Nanum Myeongjo';
+}
+
+.over-img-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.tab {
+  margin-top: 30%;
+  overflow: hidden;
+  /* border-bottom: 2px #9E9E9E solid; */
+  display: flex;
+  width: 84%;
+  margin-left: 7%;
+}
+
+.tablinks {
+  width: 100%;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: #9E9E9E;
+  font-size: 18px;
+  border-bottom: 1px #9E9E9E solid;
+}
+
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+.tab button.active {
+  border-bottom: 3px black solid;
+
+  color: black;
+}
+
+.tabcontent {
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 300;
+  display: none;
+  padding: 7%;
+  border-top: none;
+}
+
+.tab-box {
+  width: 100%;
+  height: 100%;
+}
+
+.background-img img {
+  width: 100%;
+  margin-top: 20px;
 }
