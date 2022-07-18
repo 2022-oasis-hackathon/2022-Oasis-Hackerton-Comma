@@ -23,6 +23,8 @@ target 'Comma' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'lottie-ios'
+  pod 'KakaoSDKAuth'
+  pod 'KakaoSDKUser'
   install_all_flutter_pods(flutter_application_path)
 end
 
