@@ -2,11 +2,10 @@ body {
   margin: 0px;
 }
 
-.top-img > img {
-  height: 50%;
-  width: 100%;
+.top-img img {
+  height: 50vh !important;
+
   object-fit: cover;
-  position: absolute;
 }
 
 .middle-view{
@@ -46,3 +45,21 @@ body {
   transform: translate(0, 50%);
 }
 
+.slick-dots {
+  display: flex;
+  list-style-type: none;
+}
+.slick-dots > li > button {
+  width: 7px;
+  height: 7px;
+  font-size: 0px;
+  background-color: transparent;
+  border: 0px solid;
+  background-color: #ffffff;
+  border-radius: 1000px;
+  margin-right: 10px;
+}
+
+.slick-active > button {
+  background-color: #FD8002 !important;
+}
