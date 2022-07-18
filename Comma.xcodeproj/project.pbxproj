@@ -15,6 +15,8 @@
 		F09AB6DB288175F0009D163E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09AB6D9288175F0009D163E /* Main.storyboard */; };
 		F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09AB6DC288175F1009D163E /* Assets.xcassets */; };
 		F09AB6E0288175F1009D163E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09AB6DE288175F1009D163E /* LaunchScreen.storyboard */; };
+		F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */; };
+		F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */; };
 		F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F02082883C68C00095124 /* CommaFlutterVC.swift */; };
 		F41F021128843F6C00095124 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F021028843F6C00095124 /* SplashVC.swift */; };
 		F41F02132884457D00095124 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F02122884457D00095124 /* Splash.storyboard */; };
@@ -34,6 +36,8 @@
 		F09AB6DC288175F1009D163E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F09AB6DF288175F1009D163E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09AB6E1288175F1009D163E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoEB.ttf; sourceTree = "<group>"; };
+		F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoH.ttf; sourceTree = "<group>"; };
 		F41F02082883C68C00095124 /* CommaFlutterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommaFlutterVC.swift; sourceTree = "<group>"; };
 		F41F021028843F6C00095124 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F41F02122884457D00095124 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		F0DD8E1328851FF7001557F3 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */,
+				F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -193,10 +199,12 @@
 			files = (
 				F09AB6E0288175F1009D163E /* LaunchScreen.storyboard in Resources */,
 				F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */,
+				F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */,
 				F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */,
 				F09AB6DB288175F0009D163E /* Main.storyboard in Resources */,
 				F41F02172884476900095124 /* logo.json in Resources */,
 				F41F02132884457D00095124 /* Splash.storyboard in Resources */,
+				F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
