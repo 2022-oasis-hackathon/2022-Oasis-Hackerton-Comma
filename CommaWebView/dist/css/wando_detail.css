@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+}
+
+.top-img > img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.middle-view{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.middle-view > img {
+  width: 100%;
+}
+
+.middle-img > img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.middle-view-text {
+  font-size: 14px;
+  line-height: 27px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.top-inner-img > img {
+  position: absolute;
+  object-fit: unset;
+  width: 20%; 
+  transform: translate(calc(97vw - 100%), -70%);
+  z-index: 1;
+}
+
+.bottom-view {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: translate(0, 50%);
+}
+
