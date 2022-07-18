@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+}
+
+.title {
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+  padding: 20px;
+}
+
+.top-img {
+  margin-top: -20px;
+}
+
+.top-img > img {
+  z-index: 0;
+  pointer-events: none;
+}
+
+#top-background-image {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#top-inner-text {
+  z-index: 100;
+  margin-left: 20px;
+  position: absolute;
+  pointer-events: none;
+}
+
+.top-front-image-inner {
+  width: 350px;
+  margin-left: 20px;
+}
+
+.home_bottom > img{
+  width: 100%;
+}
+
+.citylist {
+  display: flex;
+}
+
+.city-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.sub-swiper {
+  z-index: 1000;
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-85%);
+}
+
+.sub-swiper img {
+  bottom: 0;
+}
+
+.sub-swiper > .swiper-container .swiper-wrapper {
+  align-items: flex-end;
+}
+
+.top-background-image-box {
+  
+  margin-bottom: 50px;
+}
+
+.middle-text {
+  padding: 20px;
+}
+
+.middle-text div {
+  margin-bottom: 4px;
+}
+
+.middle-text div:last-child {
+  font-weight: 600;
+}
+
+.city-string {
+  padding: 7px;
+}
+
+.home_bottom {
+  margin-top: 25px;
+}

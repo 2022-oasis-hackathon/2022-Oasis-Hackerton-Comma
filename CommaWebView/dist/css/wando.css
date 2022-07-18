@@ -109,3 +109,8 @@ body {
   width: 100%;
   margin-top: 20px;
 }
+
+.cource-box {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
