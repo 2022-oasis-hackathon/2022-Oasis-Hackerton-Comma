@@ -13,5 +13,8 @@ class ColorManager {
     
     private init() {}
     
+    func getThemeMain() -> UIColor {
+        return UIColor(named: "ThemeMainColor")!
+    }
 }
 
