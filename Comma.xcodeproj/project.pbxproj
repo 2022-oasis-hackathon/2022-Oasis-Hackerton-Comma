@@ -90,20 +90,44 @@
 		F09AB6D2288175F0009D163E /* Comma */ = {
 			isa = PBXGroup;
 			children = (
+				F0DD8E1328851FF7001557F3 /* Fonts */,
+				F0DD8E1228851FE3001557F3 /* Views */,
+				F0DD8E1128851FCD001557F3 /* ViewControllers */,
 				F09AB6D3288175F0009D163E /* AppDelegate.swift */,
 				F09AB6D5288175F0009D163E /* SceneDelegate.swift */,
-				F09AB6D7288175F0009D163E /* MainVC.swift */,
-				F09AB6D9288175F0009D163E /* Main.storyboard */,
 				F09AB6DC288175F1009D163E /* Assets.xcassets */,
-				F09AB6DE288175F1009D163E /* LaunchScreen.storyboard */,
 				F09AB6E1288175F1009D163E /* Info.plist */,
 				F0984ED62881846500707FC9 /* GoogleService-Info.plist */,
-				F41F02082883C68C00095124 /* CommaFlutterVC.swift */,
 				F41F02162884476900095124 /* logo.json */,
-				F41F021028843F6C00095124 /* SplashVC.swift */,
-				F41F02122884457D00095124 /* Splash.storyboard */,
 			);
 			path = Comma;
+			sourceTree = "<group>";
+		};
+		F0DD8E1128851FCD001557F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F09AB6D7288175F0009D163E /* MainVC.swift */,
+				F41F02082883C68C00095124 /* CommaFlutterVC.swift */,
+				F41F021028843F6C00095124 /* SplashVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F0DD8E1228851FE3001557F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F09AB6D9288175F0009D163E /* Main.storyboard */,
+				F09AB6DE288175F1009D163E /* LaunchScreen.storyboard */,
+				F41F02122884457D00095124 /* Splash.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F0DD8E1328851FF7001557F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
