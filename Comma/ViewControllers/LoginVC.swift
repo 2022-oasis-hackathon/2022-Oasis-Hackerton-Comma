@@ -10,11 +10,22 @@ import RxSwift
 import RxCocoa
 import KakaoSDKAuth
 import KakaoSDKUser
+import AVFoundation
 
 class LoginVC: UIViewController {
     // UIButton
     @IBOutlet weak var appleLoginButton: UIButton!
     @IBOutlet weak var kakaoLoginButton: UIButton!
+    
+    // UIView
+    @IBOutlet weak var videoLayerView: UIView!
+    
+    // UIStackView
+    @IBOutlet weak var buttonStackView: UIStackView!
+    
+    // UIImageView
+    @IBOutlet weak var titleImageView: UIImageView!
+    
     
     // Constants
     let BUTTON_RADIUS: CGFloat = 10
@@ -25,6 +36,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         initUI()
         action()
+        playVideo()
     }
     
     private func initUI() {
@@ -43,7 +55,11 @@ class LoginVC: UIViewController {
                            print(error)
                        }
                        else {
+                           let nameVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NameVC") as! NameVC
                            
+                           nameVC.modalPresentationStyle = .overFullScreen
+                           nameVC.modalTransitionStyle = .crossDissolve
+                           self.present(nameVC, animated: true, completion: nil)
                        }
                    }
                  }
@@ -55,5 +71,21 @@ class LoginVC: UIViewController {
     private func configureButtons() {
         appleLoginButton.layer.cornerRadius = BUTTON_RADIUS
         kakaoLoginButton.layer.cornerRadius = BUTTON_RADIUS
+    }
+    
+    private func playVideo() {
+        guard let path = Bundle.main.path(forResource: "Wando", ofType: "mp4") else { return }
+        
+        let player = AVPlayer(url: URL(fileURLWithPath: path))
+        let playerLayer = AVPlayerLayer(player: player)
+        playerLayer.frame = self.view.bounds
+        playerLayer.videoGravity = .resizeAspectFill
+        self.videoLayerView.layer.addSublayer(playerLayer)
+        
+        player.play()
+        videoLayerView.bringSubviewToFront(titleImageView)
+        videoLayerView.bringSubviewToFront(appleLoginButton)
+        videoLayerView.bringSubviewToFront(kakaoLoginButton)
+        videoLayerView.bringSubviewToFront(buttonStackView)
     }
 }

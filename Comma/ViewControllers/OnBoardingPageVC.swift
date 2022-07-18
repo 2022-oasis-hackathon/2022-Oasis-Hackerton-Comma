@@ -74,7 +74,15 @@ class OnBoardingPageVC: UIPageViewController {
     }
     
     @objc func dismissPageVC() {
-        self.dismiss(animated: true)
+        let presentView = presentingViewController
+        
+        dismiss(animated: false) {
+            let loginVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+            
+            loginVC.modalPresentationStyle = .overFullScreen
+            loginVC.modalTransitionStyle = .crossDissolve
+            presentView?.present(loginVC, animated: true, completion: nil)
+        }
     }
     
     private func makePageControl() {

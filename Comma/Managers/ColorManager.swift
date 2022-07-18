@@ -24,5 +24,13 @@ class ColorManager {
     func getPageControlDisableColor() -> UIColor {
         return UIColor(named: "PageControlDisableColor")!
     }
+    
+    func getNameSubTitleColor() -> UIColor {
+        return UIColor(named: "NameSubTitleColor")!
+    }
+    
+    func getDisableColor() -> UIColor {
+        return UIColor(named: "DisableColor")!
+    }
 }
 

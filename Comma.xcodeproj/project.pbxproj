@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09F31F10344434C7F8DA271F /* Pods_Comma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3932886EFEACEC6D8922245 /* Pods_Comma.framework */; };
+		F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F08057D3288593E200CB0C35 /* Wando.mp4 */; };
+		F08057D628859D0900CB0C35 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08057D528859D0900CB0C35 /* NameVC.swift */; };
 		F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0984ED62881846500707FC9 /* GoogleService-Info.plist */; };
 		F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB6D3288175F0009D163E /* AppDelegate.swift */; };
 		F09AB6D6288175F0009D163E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB6D5288175F0009D163E /* SceneDelegate.swift */; };
@@ -35,6 +37,8 @@
 		55911E2B50CBE8B600636284 /* Pods-Comma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comma.debug.xcconfig"; path = "Target Support Files/Pods-Comma/Pods-Comma.debug.xcconfig"; sourceTree = "<group>"; };
 		B3932886EFEACEC6D8922245 /* Pods_Comma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95852949A4124799DE387DE /* Pods-Comma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comma.release.xcconfig"; path = "Target Support Files/Pods-Comma/Pods-Comma.release.xcconfig"; sourceTree = "<group>"; };
+		F08057D3288593E200CB0C35 /* Wando.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Wando.mp4; path = CommaWebView/dist/videos/Wando.mp4; sourceTree = SOURCE_ROOT; };
+		F08057D528859D0900CB0C35 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
 		F0984ED62881846500707FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F09AB6D0288175F0009D163E /* Comma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09AB6D3288175F0009D163E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 				F09AB6E1288175F1009D163E /* Info.plist */,
 				F0984ED62881846500707FC9 /* GoogleService-Info.plist */,
 				F41F02162884476900095124 /* logo.json */,
+				F08057D3288593E200CB0C35 /* Wando.mp4 */,
 			);
 			path = Comma;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				F0A7477D28853D95009E4DA6 /* LastOnboardingPageVC.swift */,
 				F0A7477F28853DC9009E4DA6 /* OnBoardingPageVC.swift */,
 				F0A7478328855D74009E4DA6 /* LoginVC.swift */,
+				F08057D528859D0900CB0C35 /* NameVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */,
 				F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */,
 				F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */,
+				F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */,
 				F09AB6DB288175F0009D163E /* Main.storyboard in Resources */,
 				F41F02172884476900095124 /* logo.json in Resources */,
 				F41F02132884457D00095124 /* Splash.storyboard in Resources */,
@@ -312,6 +319,7 @@
 				F0A7475028852250009E4DA6 /* FontManager.swift in Sources */,
 				F0A7475428852275009E4DA6 /* UserDefaultsManager.swift in Sources */,
 				F09AB6D6288175F0009D163E /* SceneDelegate.swift in Sources */,
+				F08057D628859D0900CB0C35 /* NameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
