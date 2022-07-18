@@ -55,7 +55,11 @@ class LoginVC: UIViewController {
                            print(error)
                        }
                        else {
+                           let nameVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NameVC") as! NameVC
                            
+                           nameVC.modalPresentationStyle = .overFullScreen
+                           nameVC.modalTransitionStyle = .crossDissolve
+                           self.present(nameVC, animated: true, completion: nil)
                        }
                    }
                  }
