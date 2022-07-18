@@ -490,6 +490,17 @@ PODS:
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.7.0)
+  - KakaoSDKAuth (2.9.1):
+    - KakaoSDKCommon (= 2.9.1)
+  - KakaoSDKCommon (2.9.1):
+    - KakaoSDKCommon/Common (= 2.9.1)
+    - KakaoSDKCommon/Network (= 2.9.1)
+  - KakaoSDKCommon/Common (2.9.1)
+  - KakaoSDKCommon/Network (2.9.1):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.9.1)
+  - KakaoSDKUser (2.9.1):
+    - KakaoSDKAuth (= 2.9.1)
   - leveldb-library (1.22.1)
   - lottie-ios (3.3.0)
   - nanopb (2.30908.0):
@@ -524,6 +535,8 @@ DEPENDENCIES:
   - Flutter (from `flutter_comma/.ios/Flutter/engine`)
   - flutter_comma (from `flutter_comma/.ios/Flutter`)
   - FlutterPluginRegistrant (from `flutter_comma/.ios/Flutter/FlutterPluginRegistrant`)
+  - KakaoSDKAuth
+  - KakaoSDKUser
   - lottie-ios
   - RxCocoa
   - RxGesture
@@ -553,6 +566,9 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKUser
     - leveldb-library
     - lottie-ios
     - nanopb
@@ -596,6 +612,9 @@ SPEC CHECKSUMS:
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 43748f93435c2aa068b1cbe39655aaf600652e91
+  KakaoSDKAuth: 8ec514e64f57f405735e92483fdae1cc2830d351
+  KakaoSDKCommon: c4b08131fdba6770a280ffe83916048174f329bf
+  KakaoSDKUser: 3b82c8f4b7bdd8584b296cf91d1be4b4a84102fb
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
@@ -609,6 +628,6 @@ SPEC CHECKSUMS:
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: b619163fe6d1574646306e73536c0540363836d8
+PODFILE CHECKSUM: 5ff8d2563cbf72df79deaebd94288974ef80cf12
 
 COCOAPODS: 1.11.2

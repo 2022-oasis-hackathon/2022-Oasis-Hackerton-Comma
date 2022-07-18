@@ -9,6 +9,9 @@ import UIKit
 import FirebaseCore
 import Flutter
 import FlutterPluginRegistrant
+import KakaoSDKAuth
+import KakaoSDKCommon
+import KakaoSDKUser
 
 @UIApplicationMain
 class AppDelegate: FlutterAppDelegate {
@@ -16,7 +19,7 @@ class AppDelegate: FlutterAppDelegate {
 
     override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-
+        KakaoSDK.initSDK(appKey: "a3a37a0160bf556ddbe890c40d6eba91")
         return true
       }
     
