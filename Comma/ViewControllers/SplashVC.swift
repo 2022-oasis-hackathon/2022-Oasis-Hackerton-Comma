@@ -20,10 +20,12 @@ class SplashVC: UIViewController {
         animationView!.animationSpeed = 1.20
         view.addSubview(animationView!)
         animationView!.play {_ in
-        let Storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        guard let VC = Storyboard.instantiateViewController(identifier: "MainVC") as? UIViewController else { return }
-        VC.modalPresentationStyle = .fullScreen // 풀스크린으로 설정
-        self.present(VC, animated: false, completion: nil)
+//        let Storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//        guard let VC = Storyboard.instantiateViewController(identifier: "MainVC") as? UIViewController else { return }
+//        VC.modalPresentationStyle = .overFullScreen // 풀스크린으로 설정
+        let pageVC = OnBoardingPageVC(transitionStyle: .scroll, navigationOrientation: .horizontal, options: .none)
+        pageVC.modalPresentationStyle = .overFullScreen
+        self.present(pageVC, animated: true, completion: nil)
         }
     }
 }

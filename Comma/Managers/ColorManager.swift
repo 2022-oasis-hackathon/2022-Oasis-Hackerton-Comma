@@ -16,5 +16,13 @@ class ColorManager {
     func getThemeMain() -> UIColor {
         return UIColor(named: "ThemeMainColor")!
     }
+    
+    func getOnboardingLabelColor() -> UIColor {
+        return UIColor(named: "OnboardingLabelColor")!
+    }
+    
+    func getPageControlDisableColor() -> UIColor {
+        return UIColor(named: "PageControlDisableColor")!
+    }
 }
 

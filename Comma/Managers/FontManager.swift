@@ -40,4 +40,8 @@ class FontManager {
     func getAppleSDGothicNeoSemiBold(fontSize: CGFloat) -> UIFont {
         return UIFont(name: "AppleSDGothicNeo-SemiBold", size: fontSize)!
     }
+    
+    func getHarmonyMedium(fontSize: CGFloat) -> UIFont {
+        return UIFont(name: "HARMONY", size: fontSize)!
+    }
 }

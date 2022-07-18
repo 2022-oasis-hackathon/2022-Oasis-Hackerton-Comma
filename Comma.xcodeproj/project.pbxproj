@@ -20,6 +20,10 @@
 		F0A7475028852250009E4DA6 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7474F28852250009E4DA6 /* FontManager.swift */; };
 		F0A747522885225F009E4DA6 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A747512885225F009E4DA6 /* ColorManager.swift */; };
 		F0A7475428852275009E4DA6 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7475328852275009E4DA6 /* UserDefaultsManager.swift */; };
+		F0A7477C28853D70009E4DA6 /* FirstOnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7477B28853D6F009E4DA6 /* FirstOnboardingPageVC.swift */; };
+		F0A7477E28853D95009E4DA6 /* LastOnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7477D28853D95009E4DA6 /* LastOnboardingPageVC.swift */; };
+		F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7477F28853DC9009E4DA6 /* OnBoardingPageVC.swift */; };
+		F0A7478228854376009E4DA6 /* Harmony.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7478128854376009E4DA6 /* Harmony.otf */; };
 		F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F02082883C68C00095124 /* CommaFlutterVC.swift */; };
 		F41F021128843F6C00095124 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F021028843F6C00095124 /* SplashVC.swift */; };
 		F41F02132884457D00095124 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F02122884457D00095124 /* Splash.storyboard */; };
@@ -44,6 +48,10 @@
 		F0A7474F28852250009E4DA6 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		F0A747512885225F009E4DA6 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		F0A7475328852275009E4DA6 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		F0A7477B28853D6F009E4DA6 /* FirstOnboardingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOnboardingPageVC.swift; sourceTree = "<group>"; };
+		F0A7477D28853D95009E4DA6 /* LastOnboardingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastOnboardingPageVC.swift; sourceTree = "<group>"; };
+		F0A7477F28853DC9009E4DA6 /* OnBoardingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageVC.swift; sourceTree = "<group>"; };
+		F0A7478128854376009E4DA6 /* Harmony.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Harmony.otf; sourceTree = "<group>"; };
 		F41F02082883C68C00095124 /* CommaFlutterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommaFlutterVC.swift; sourceTree = "<group>"; };
 		F41F021028843F6C00095124 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F41F02122884457D00095124 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
@@ -130,6 +138,9 @@
 				F09AB6D7288175F0009D163E /* MainVC.swift */,
 				F41F02082883C68C00095124 /* CommaFlutterVC.swift */,
 				F41F021028843F6C00095124 /* SplashVC.swift */,
+				F0A7477B28853D6F009E4DA6 /* FirstOnboardingPageVC.swift */,
+				F0A7477D28853D95009E4DA6 /* LastOnboardingPageVC.swift */,
+				F0A7477F28853DC9009E4DA6 /* OnBoardingPageVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -149,6 +160,7 @@
 			children = (
 				F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */,
 				F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */,
+				F0A7478128854376009E4DA6 /* Harmony.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -215,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F09AB6E0288175F1009D163E /* LaunchScreen.storyboard in Resources */,
+				F0A7478228854376009E4DA6 /* Harmony.otf in Resources */,
 				F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */,
 				F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */,
 				F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */,
@@ -284,9 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A7477C28853D70009E4DA6 /* FirstOnboardingPageVC.swift in Sources */,
+				F0A7477E28853D95009E4DA6 /* LastOnboardingPageVC.swift in Sources */,
 				F0A747522885225F009E4DA6 /* ColorManager.swift in Sources */,
 				F09AB6D8288175F0009D163E /* MainVC.swift in Sources */,
 				F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */,
+				F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */,
 				F41F021128843F6C00095124 /* SplashVC.swift in Sources */,
 				F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */,
 				F0A7475028852250009E4DA6 /* FontManager.swift in Sources */,
@@ -439,7 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88WFD6M5FC;
+				DEVELOPMENT_TEAM = ZDUPRML6B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Comma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,7 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88WFD6M5FC;
+				DEVELOPMENT_TEAM = ZDUPRML6B6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Comma/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
