@@ -60,6 +60,7 @@ extension MyPageVC: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MyPageTopCell", for: indexPath) as! MyPageTopCell
             cell.titleLabel.text = "Hello, Eddy님 !"
             cell.descriptionLabel.text = "Life is Short"
+            cell.selectionStyle = .none
             return cell
         }
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyPageBottomCell", for: indexPath) as! MyPageBottomCell
@@ -80,7 +81,12 @@ extension MyPageVC: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 1 && indexPath.row == 0 {
             let myProfileVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyProfileVC") as! MyProfileVC
             self.navigationController?.pushViewController(myProfileVC, animated: true)
+        } else if indexPath.section == 1 && indexPath.row == 1 {
+            let myPassportVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyPassportVC") as! MyPassportVC
+            self.navigationController?.pushViewController(myPassportVC, animated: true)
         }
+        
+        
     }
     
 }

@@ -41,6 +41,11 @@
 		F0A7478428855D74009E4DA6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7478328855D74009E4DA6 /* LoginVC.swift */; };
 		F0D055D02886C096005DD345 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055CF2886C096005DD345 /* WebViewManager.swift */; };
 		F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055D12886C206005DD345 /* FullWebViewVC.swift */; };
+<<<<<<< HEAD
+		F0D055D42886C7D1005DD345 /* MyPassportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055D32886C7D1005DD345 /* MyPassportVC.swift */; };
+		F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F02082883C68C00095124 /* CommaFlutterVC.swift */; };
+=======
+>>>>>>> b3017a15b6ae1e8798c93227d3b9312197cc4fb3
 		F41F021128843F6C00095124 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F021028843F6C00095124 /* SplashVC.swift */; };
 		F41F02132884457D00095124 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F02122884457D00095124 /* Splash.storyboard */; };
 		F41F02172884476900095124 /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = F41F02162884476900095124 /* logo.json */; };
@@ -86,6 +91,11 @@
 		F0A7478328855D74009E4DA6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F0D055CF2886C096005DD345 /* WebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
 		F0D055D12886C206005DD345 /* FullWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWebViewVC.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		F0D055D32886C7D1005DD345 /* MyPassportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPassportVC.swift; sourceTree = "<group>"; };
+		F41F02082883C68C00095124 /* CommaFlutterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommaFlutterVC.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> b3017a15b6ae1e8798c93227d3b9312197cc4fb3
 		F41F021028843F6C00095124 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F41F02122884457D00095124 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		F41F02162884476900095124 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
@@ -199,7 +209,11 @@
 				F0A2B6B828866ECB00B33A83 /* MyPageVC.swift */,
 				F0A2B6C32886779500B33A83 /* MyProfileVC.swift */,
 				F0D055D12886C206005DD345 /* FullWebViewVC.swift */,
+<<<<<<< HEAD
+				F0D055D32886C7D1005DD345 /* MyPassportVC.swift */,
+=======
 				F44B33312886C90500F1C282 /* JourneyVC.swift */,
+>>>>>>> b3017a15b6ae1e8798c93227d3b9312197cc4fb3
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -372,6 +386,7 @@
 				F0A2B6B928866ECB00B33A83 /* MyPageVC.swift in Sources */,
 				F09AB6D6288175F0009D163E /* SceneDelegate.swift in Sources */,
 				F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */,
+				F0D055D42886C7D1005DD345 /* MyPassportVC.swift in Sources */,
 				F08057D628859D0900CB0C35 /* NameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
