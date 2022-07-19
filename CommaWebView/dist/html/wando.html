@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" >
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
   <link href="http://fonts.cdnfonts.com/css/nanummyeongjo" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
     integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
@@ -14,30 +15,69 @@
 </head>
 
 <body>
+  <video autoplay muted loop playsinline id="backgroundVideo" style="z-index: -1000; position: absolute;">
+    <source src="../videos/Wando.mp4" type="video/mp4">
+  </video>
+  <div id="back">
+    <div id="back_cover">
+      <img src="../images/wando_back.svg" alt="">
+    </div>
+  </div>
+  <div class="over-scroll-box">
+    <div class="over-scroll">
+      <div>
+        <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.5 2.93073e-07C10.0857 0.0107741 9.73055 0.150833 9.41094 0.441724L0.40248 8.8237C0.142052 9.0715 -7.15822e-08 9.36239 -5.60413e-08 9.71792C-2.44887e-08 10.4398 0.615558 11 1.40868 11C1.78749 11 2.14262 10.8599 2.41488 10.6121L10.5 3.07052L18.5851 10.6121C18.8574 10.8599 19.2007 11 19.5913 11C20.3844 11 21 10.4398 21 9.71792C21 9.37316 20.8579 9.0715 20.5975 8.8237L11.5772 0.441724C11.2694 0.140059 10.9143 2.74963e-07 10.5 2.93073e-07Z"
+            fill="white" />
+        </svg>
+      </div>
+      <div>Scroll</div>
+    </div>
+  </div>
   <div id="fullpage">
     <div class="section" data-anchor="videoSection">
-      <video autoplay muted loop playsinline id="backgroundVideo">
-        <source src="../videos/Wando.mp4" type="video/mp4">
-      </video>
       <div class="over-video">
         <div class="over-img-box">
           <img class="over-video-string-img" src="../images/wando_img.svg" alt="wando_text">
         </div>
-        <div class="over-scroll-box">
-          <div class="over-scroll">
-            <div>
-              <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10.5 2.93073e-07C10.0857 0.0107741 9.73055 0.150833 9.41094 0.441724L0.40248 8.8237C0.142052 9.0715 -7.15822e-08 9.36239 -5.60413e-08 9.71792C-2.44887e-08 10.4398 0.615558 11 1.40868 11C1.78749 11 2.14262 10.8599 2.41488 10.6121L10.5 3.07052L18.5851 10.6121C18.8574 10.8599 19.2007 11 19.5913 11C20.3844 11 21 10.4398 21 9.71792C21 9.37316 20.8579 9.0715 20.5975 8.8237L11.5772 0.441724C11.2694 0.140059 10.9143 2.74963e-07 10.5 2.93073e-07Z"
-                  fill="white" />
-              </svg>
-            </div>
-            <div>Scroll</div>
-          </div>
+      </div>
+    </div>
+    <div class="section" data-anchor="curation" >
+      <div style="background-color: rgba(0, 0, 0, 0.5); height: 100%; width: 100%; position: absolute; z-index: -10;"></div>
+      <div class="curation-inner-string">
+        <img src="../images/wando_middle_long_string.svg" alt="">
+      </div>
+      <div class="button-box">
+        <div class="curation-button" id="stay">
+          <img src="../images/one_select.png" alt="" id="stay-img">
+        </div>
+        <div class="curation-line">
+          <img src="../images/line.png" alt="">
+        </div>
+        <div class="curation-button" id="taste">
+          <img src="../images/two_not.png" alt="" id="taste-img">
+        </div>
+        <div class="curation-line">
+          <img src="../images/line.png" alt="">
+        </div>
+        <div class="curation-button">
+          <img src="../images/three_not.png" alt="">
+        </div>
+      </div>
+      <div class="image-box">
+        <div class="curation-img select">
+          <img src="../images/one-img.png" alt="" id="first-img">
+        </div>
+        <div class="curation-img">
+          <img src="../images/two-not-select.png" alt="" id="second-img">
+        </div>
+        <div class="curation-img">
+          <img src="../images/three-not-select.png" alt="">
         </div>
       </div>
     </div>
-    <div class="section" data-anchor="cource">
+    <div class="section" data-anchor="cource" style="background-color: white; z-index: 10;">
       <div class="tab-box">
         <div class="tab">
           <button class="tablinks active" onclick="openCity(event, 'Cource')">코스</button>
@@ -59,8 +99,7 @@
           </div>
         </div>
         <div id="Comunity" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p>
+          <img src="../images/wando_comunity.png" alt="" id="wando-community">
         </div>
       </div>
     </div>

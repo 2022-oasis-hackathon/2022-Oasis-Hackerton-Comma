@@ -6,3 +6,7 @@ $(document).ready(function () {
 
   $(".middle-view").prepend(slickDots);
 });
+
+$("#back_cover").on("click", function () {
+  history.back();
+});
