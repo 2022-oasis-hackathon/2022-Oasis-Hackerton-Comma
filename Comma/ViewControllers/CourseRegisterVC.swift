@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainVC: UIViewController {
+class CourseRegisterVC: UIViewController {
     override func viewDidLoad() {
        super.viewDidLoad()
         
