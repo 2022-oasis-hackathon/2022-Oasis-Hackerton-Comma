@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MyProfileVC: UIViewController {
     // UILabel
@@ -16,17 +18,29 @@ class MyProfileVC: UIViewController {
     
     // UIButton
     @IBOutlet weak var modifyButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     // Variables
 
-    
     // Constants
     let TITLE_LABEL_FONT_SIZE: CGFloat = 18
     let BUTTON_CORNER_RADIUS: CGFloat = 10
     let BUTTON_FONT_SIZE: CGFloat = 18
+    
+    // RxSwift
+    let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        action()
+    }
+    
+    private func action() {
+        backButton.rx.tap
+            .subscribe(onNext: { _ in
+                self.navigationController?.popViewController(animated: true)
+            })
+            .disposed(by: disposeBag)
     }
     
     private func initUI(){

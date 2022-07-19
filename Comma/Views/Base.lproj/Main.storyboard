@@ -494,6 +494,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="RjW-v2-1lI" id="Hjj-yb-6Aq"/>
                         <outlet property="modifyButton" destination="SEn-F7-2yl" id="gnx-27-Tcj"/>
                         <outlet property="myProfileTableView" destination="nCR-kD-hjs" id="Vtw-mP-7uX"/>
                         <outlet property="titleLabel" destination="Rvi-cq-8Au" id="6gm-0U-tn1"/>
