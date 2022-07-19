@@ -8,12 +8,21 @@
 import UIKit
 
 class MyPageVC: UIViewController {
-
+    // UITableView
+    @IBOutlet weak var myPageTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initUI()
     }
     
+    private func initUI() {
+        
+    }
+    
+    private func configureTableView() {
+        
+    }
 
 }

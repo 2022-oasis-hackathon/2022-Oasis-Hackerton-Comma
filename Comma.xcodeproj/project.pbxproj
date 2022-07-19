@@ -18,6 +18,10 @@
 		F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F09AB6DC288175F1009D163E /* Assets.xcassets */; };
 		F09AB6E0288175F1009D163E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F09AB6DE288175F1009D163E /* LaunchScreen.storyboard */; };
 		F0A2B6B928866ECB00B33A83 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6B828866ECB00B33A83 /* MyPageVC.swift */; };
+		F0A2B6BD2886708B00B33A83 /* MyPageTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6BB2886708B00B33A83 /* MyPageTopCell.swift */; };
+		F0A2B6BE2886708B00B33A83 /* MyPageTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6BC2886708B00B33A83 /* MyPageTopCell.xib */; };
+		F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */; };
+		F0A2B6C22886709900B33A83 /* MyPageBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */; };
 		F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */; };
 		F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */; };
 		F0A7475028852250009E4DA6 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7474F28852250009E4DA6 /* FontManager.swift */; };
@@ -50,6 +54,10 @@
 		F09AB6DF288175F1009D163E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F09AB6E1288175F1009D163E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0A2B6B828866ECB00B33A83 /* MyPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageVC.swift; sourceTree = "<group>"; };
+		F0A2B6BB2886708B00B33A83 /* MyPageTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTopCell.swift; sourceTree = "<group>"; };
+		F0A2B6BC2886708B00B33A83 /* MyPageTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageTopCell.xib; sourceTree = "<group>"; };
+		F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBottomCell.swift; sourceTree = "<group>"; };
+		F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageBottomCell.xib; sourceTree = "<group>"; };
 		F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoEB.ttf; sourceTree = "<group>"; };
 		F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoH.ttf; sourceTree = "<group>"; };
 		F0A7474F28852250009E4DA6 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 		F09AB6D2288175F0009D163E /* Comma */ = {
 			isa = PBXGroup;
 			children = (
+				F0A2B6BA2886705700B33A83 /* Cells */,
 				F0A7474E28852235009E4DA6 /* Managers */,
 				F0DD8E1328851FF7001557F3 /* Fonts */,
 				F0DD8E1228851FE3001557F3 /* Views */,
@@ -129,6 +138,17 @@
 				F08057D3288593E200CB0C35 /* Wando.mp4 */,
 			);
 			path = Comma;
+			sourceTree = "<group>";
+		};
+		F0A2B6BA2886705700B33A83 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F0A2B6BB2886708B00B33A83 /* MyPageTopCell.swift */,
+				F0A2B6BC2886708B00B33A83 /* MyPageTopCell.xib */,
+				F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */,
+				F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F0A7474E28852235009E4DA6 /* Managers */ = {
@@ -243,11 +263,13 @@
 				F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */,
 				F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */,
 				F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */,
+				F0A2B6C22886709900B33A83 /* MyPageBottomCell.xib in Resources */,
 				F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */,
 				F09AB6DB288175F0009D163E /* Main.storyboard in Resources */,
 				F41F02172884476900095124 /* logo.json in Resources */,
 				F41F02132884457D00095124 /* Splash.storyboard in Resources */,
 				F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */,
+				F0A2B6BE2886708B00B33A83 /* MyPageTopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A2B6BD2886708B00B33A83 /* MyPageTopCell.swift in Sources */,
 				F0A7477C28853D70009E4DA6 /* FirstOnboardingPageVC.swift in Sources */,
 				F0A7477E28853D95009E4DA6 /* LastOnboardingPageVC.swift in Sources */,
 				F0A7478428855D74009E4DA6 /* LoginVC.swift in Sources */,
@@ -318,6 +341,7 @@
 				F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */,
 				F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */,
 				F41F021128843F6C00095124 /* SplashVC.swift in Sources */,
+				F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */,
 				F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */,
 				F0A7475028852250009E4DA6 /* FontManager.swift in Sources */,
 				F0A7475428852275009E4DA6 /* UserDefaultsManager.swift in Sources */,
