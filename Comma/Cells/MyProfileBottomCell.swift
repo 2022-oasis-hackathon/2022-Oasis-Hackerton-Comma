@@ -8,16 +8,21 @@
 import UIKit
 
 class MyProfileBottomCell: UITableViewCell {
-
+    // UILabel
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    
+    // Constants
+    let TITLE_LABEL_FONT_SIZE: CGFloat = 15
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        titleLabel.font = FontManager.shared.getAppleSDGothicNeoMedium(fontSize: TITLE_LABEL_FONT_SIZE)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        
     }
     
 }

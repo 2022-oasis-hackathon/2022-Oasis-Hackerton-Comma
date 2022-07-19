@@ -32,5 +32,13 @@ class ColorManager {
     func getDisableColor() -> UIColor {
         return UIColor(named: "DisableColor")!
     }
+    
+    func getFavoriteCategoryAbleColor() -> UIColor {
+        return UIColor(named: "FavoriteCateogryClickedBackgroundColor")!
+    }
+    
+    func getFavoriteCategoryDisableColor() -> UIColor {
+        return UIColor(named: "FavoriteCategoryUnclickedBackgroundColor")!
+    }
 }
 
