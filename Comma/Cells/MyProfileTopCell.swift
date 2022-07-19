@@ -21,7 +21,6 @@ class MyProfileTopCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         titleLabel.font = FontManager.shared.getAppleSDGothicNeoMedium(fontSize: TITLE_FONT_SIZE)
-        nameTextField.layer.cornerRadius = CORNER_RADIUS
         nameTextField.font = FontManager.shared.getAppleSDGothicNeoMedium(fontSize: TEXT_FIELD_FONT_SIZE)
         nameTextField.addLeftPadding()
         nameTextField.text = "Eddy"

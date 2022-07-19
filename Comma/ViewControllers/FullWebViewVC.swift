@@ -8,24 +8,18 @@
 import UIKit
 
 class FullWebViewVC: UIViewController {
-
+    // UIButton
+    @IBOutlet weak var backButton: UIButton!
+    
+    // UILabel
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-    func moveToSelf() {
+    @IBAction func tapBackButton(_ sender: UIButton) {
+        // TODO: 뒤로 가기 버튼 이벤트 추가
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

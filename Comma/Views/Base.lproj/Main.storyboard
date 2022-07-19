@@ -336,9 +336,38 @@
                     <view key="view" contentMode="scaleToFill" id="0L6-bU-EBa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4b-eb-EaK">
+                                <rect key="frame" x="24" y="68" width="12.5" height="22"/>
+                                <color key="backgroundColor" name="White"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="tapBackButton:" destination="6EZ-Vc-puJ" eventType="touchUpInside" id="8sx-O5-g58"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybf-cd-6XX">
+                                <rect key="frame" x="167.5" y="68.5" width="79" height="21"/>
+                                <color key="backgroundColor" name="White"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fLh-m0-NOg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="k4b-eb-EaK" firstAttribute="top" secondItem="fLh-m0-NOg" secondAttribute="top" constant="24" id="E6F-I6-l3T"/>
+                            <constraint firstItem="Ybf-cd-6XX" firstAttribute="centerY" secondItem="k4b-eb-EaK" secondAttribute="centerY" id="Ldq-m8-uQt"/>
+                            <constraint firstItem="k4b-eb-EaK" firstAttribute="leading" secondItem="fLh-m0-NOg" secondAttribute="leading" constant="24" id="SDt-zY-xMX"/>
+                            <constraint firstItem="Ybf-cd-6XX" firstAttribute="centerX" secondItem="0L6-bU-EBa" secondAttribute="centerX" id="ou1-db-uo3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="k4b-eb-EaK" id="Mym-xa-qCs"/>
+                        <outlet property="titleLabel" destination="Ybf-cd-6XX" id="RHZ-wi-qNW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhE-93-7s7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,7 +390,31 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYW-qe-bq9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THL-vY-KJr">
+                                        <rect key="frame" x="24" y="78" width="13" height="22"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="White"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="chevron.left" catalog="system"/>
+                                        <connections>
+                                            <action selector="tapBackButton:" destination="kcO-c9-F9l" eventType="touchUpInside" id="dsk-9e-mAh"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wando / 완도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTt-8n-8PI">
+                                        <rect key="frame" x="157.5" y="78" width="99" height="22"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="18"/>
+                                        <color key="textColor" name="White"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="pTt-8n-8PI" firstAttribute="centerX" secondItem="RYW-qe-bq9" secondAttribute="centerX" id="7iU-kJ-sGY"/>
+                                    <constraint firstItem="pTt-8n-8PI" firstAttribute="centerY" secondItem="THL-vY-KJr" secondAttribute="centerY" id="bKo-N2-orJ"/>
+                                    <constraint firstItem="THL-vY-KJr" firstAttribute="top" secondItem="RYW-qe-bq9" secondAttribute="top" constant="78" id="eeK-Pd-BHr"/>
+                                    <constraint firstItem="THL-vY-KJr" firstAttribute="leading" secondItem="RYW-qe-bq9" secondAttribute="leading" constant="24" id="gZq-zr-56t"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2CS-jF-jrg"/>
@@ -380,7 +433,9 @@
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="backButton" destination="THL-vY-KJr" id="xZi-77-G3g"/>
                         <outlet property="journeyView" destination="RYW-qe-bq9" id="qez-ss-EK9"/>
+                        <outlet property="titleLabel" destination="pTt-8n-8PI" id="CTP-5O-ujR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sg2-1K-BQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
