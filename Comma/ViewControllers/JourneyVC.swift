@@ -6,18 +6,31 @@
 //
 
 import UIKit
+import WebKit
 
 
 class JourneyVC: UIViewController {
 
+
+    @IBOutlet weak var journeyView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func moveButton(_ sender: Any) {
         let webViewManager = WebViewManager.shared
-        webViewManager.getWebView(view: UIView(), viewcontoler: self ,url: "http://127.0.0.1:5500/CommaWebView/dist/html/wando.html#videoSection")
+        webViewManager.configureWebView(isTopView: false, isBottomView: true)
+        webViewManager.getWebView(view: journeyView, viewcontoller: self ,url: "http://127.0.0.1:5500/CommaWebView/dist/html/home.html")
     }
-    
+}
+
+extension JourneyVC: WKScriptMessageHandler {
+    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        if let body = message.body as? String, body == "wando_detail" {
+            let webViewManager = WebViewManager.shared
+            webViewManager.configureWebView(isTopView: false, isBottomView: false)
+            webViewManager.getWebView(view: UIView(), viewcontoller: self, url: "http://127.0.0.1:5500/CommaWebView/dist/html/wando_detail.html")
+            
+        }
+    }
 }

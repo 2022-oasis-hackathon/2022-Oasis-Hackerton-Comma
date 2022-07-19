@@ -21,20 +21,22 @@ class WebViewManager {
         self.isBottomView = isBottomView
     }
     
-    func getWebView(view: UIView, viewcontoler: UIViewController, url: String) {
+    func getWebView(view: UIView, viewcontoller: UIViewController, url: String) {
         let webConfiguration = WKWebViewConfiguration()
         webConfiguration.allowsInlineMediaPlayback = true
                 webConfiguration.mediaTypesRequiringUserActionForPlayback = []
         webConfiguration.preferences.javaScriptEnabled = true
-        
         let url = URL(string: url)
         let request = URLRequest(url: url!)
         
         if (self.isBottomView) {
-            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), configuration: webConfiguration)
+            let contentController = WKUserContentController()
+            contentController.add(viewcontoller as! WKScriptMessageHandler, name: "scriptHandler")
+            webConfiguration.userContentController = contentController
+            
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width - 24, height: view.bounds.height - 50), configuration: webConfiguration)
             view.addSubview(webView)
             webView.load(request)
-
         } else {
             let fullWebViewVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullWebViewVC") as! FullWebViewVC
             let fullWebViewParrent = fullWebViewVC.view
@@ -44,7 +46,7 @@ class WebViewManager {
             webView.load(request)
             
             fullWebViewVC.modalPresentationStyle = .overFullScreen
-            viewcontoler.present(fullWebViewVC, animated: true)
+            viewcontoller.present(fullWebViewVC, animated: true)
         }
     }
 }
