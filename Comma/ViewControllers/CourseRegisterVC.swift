@@ -12,4 +12,9 @@ class CourseRegisterVC: UIViewController {
        super.viewDidLoad()
         
    }
+    @IBAction func tapButton(_ sender: Any) {
+        let testVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TestVC")
+        testVC.modalPresentationStyle = .overFullScreen
+        self.present(testVC, animated: true)
+    }
 }
