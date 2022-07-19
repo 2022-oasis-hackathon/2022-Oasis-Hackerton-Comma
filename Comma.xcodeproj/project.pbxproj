@@ -39,6 +39,8 @@
 		F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7477F28853DC9009E4DA6 /* OnBoardingPageVC.swift */; };
 		F0A7478228854376009E4DA6 /* Harmony.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7478128854376009E4DA6 /* Harmony.otf */; };
 		F0A7478428855D74009E4DA6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7478328855D74009E4DA6 /* LoginVC.swift */; };
+		F0D055D02886C096005DD345 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055CF2886C096005DD345 /* WebViewManager.swift */; };
+		F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055D12886C206005DD345 /* FullWebViewVC.swift */; };
 		F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F02082883C68C00095124 /* CommaFlutterVC.swift */; };
 		F41F021128843F6C00095124 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F021028843F6C00095124 /* SplashVC.swift */; };
 		F41F02132884457D00095124 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F02122884457D00095124 /* Splash.storyboard */; };
@@ -82,6 +84,8 @@
 		F0A7477F28853DC9009E4DA6 /* OnBoardingPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageVC.swift; sourceTree = "<group>"; };
 		F0A7478128854376009E4DA6 /* Harmony.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Harmony.otf; sourceTree = "<group>"; };
 		F0A7478328855D74009E4DA6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F0D055CF2886C096005DD345 /* WebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
+		F0D055D12886C206005DD345 /* FullWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWebViewVC.swift; sourceTree = "<group>"; };
 		F41F02082883C68C00095124 /* CommaFlutterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommaFlutterVC.swift; sourceTree = "<group>"; };
 		F41F021028843F6C00095124 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F41F02122884457D00095124 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				F0A7474F28852250009E4DA6 /* FontManager.swift */,
 				F0A747512885225F009E4DA6 /* ColorManager.swift */,
 				F0A7475328852275009E4DA6 /* UserDefaultsManager.swift */,
+				F0D055CF2886C096005DD345 /* WebViewManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				F08057D528859D0900CB0C35 /* NameVC.swift */,
 				F0A2B6B828866ECB00B33A83 /* MyPageVC.swift */,
 				F0A2B6C32886779500B33A83 /* MyProfileVC.swift */,
+				F0D055D12886C206005DD345 /* FullWebViewVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				F0A2B6CF28867DD100B33A83 /* MyProfileBottomCell.swift in Sources */,
 				F0A747522885225F009E4DA6 /* ColorManager.swift in Sources */,
 				F09AB6D8288175F0009D163E /* CourseRegisterVC.swift in Sources */,
+				F0D055D02886C096005DD345 /* WebViewManager.swift in Sources */,
 				F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */,
 				F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */,
 				F41F021128843F6C00095124 /* SplashVC.swift in Sources */,
@@ -375,6 +382,7 @@
 				F0A7475428852275009E4DA6 /* UserDefaultsManager.swift in Sources */,
 				F0A2B6B928866ECB00B33A83 /* MyPageVC.swift in Sources */,
 				F09AB6D6288175F0009D163E /* SceneDelegate.swift in Sources */,
+				F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */,
 				F08057D628859D0900CB0C35 /* NameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
