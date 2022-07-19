@@ -36,20 +36,17 @@ $("#backgroundVideo").on("pause", function () {
 });
 
 $("#cource_1").on("click", function () {
-  console.log("asdf");
-  try {
-    webkit.messageHandlers.scriptHandler.postMessage("wando_detail");
-  } catch (error) {
-    alert(error);
-  }
+  location.href = "./wando_detail.html";
 });
 
 let observer = new MutationObserver((mutations) => {
   // 노드가 변경 됐을 때의 작업
   if ($(".fp-viewing-cource")[0] == undefined) {
     $(".over-scroll-box").css("display", "flex");
+    $("#back_cover > img").attr("src", "../images/wando_back.svg");
   } else {
     $(".over-scroll-box").css("display", "none");
+    $("#back_cover > img").attr("src", "../images/wando_back_black.svg");
   }
 });
 
@@ -80,4 +77,12 @@ $("#stay").on("click", function () {
 
 $("#first-img").on("click", function () {
   location.href = "./wando_stay.html";
+});
+
+$("#back_cover").on("click", function () {
+  try {
+    webkit.messageHandlers.scriptHandler.postMessage("back");
+  } catch (error) {
+    alert(error);
+  }
 });

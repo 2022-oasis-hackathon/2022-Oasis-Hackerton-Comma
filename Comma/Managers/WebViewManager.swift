@@ -26,7 +26,7 @@ class WebViewManager {
         webConfiguration.allowsInlineMediaPlayback = true
                 webConfiguration.mediaTypesRequiringUserActionForPlayback = []
         webConfiguration.preferences.javaScriptEnabled = true
-        let url = URL(string: url)
+        let url = URL(string: "http://127.0.0.1:5500" + url)
         let request = URLRequest(url: url!)
         
         if (self.isBottomView) {
@@ -40,6 +40,10 @@ class WebViewManager {
         } else {
             let fullWebViewVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullWebViewVC") as! FullWebViewVC
             let fullWebViewParrent = fullWebViewVC.view
+            
+            let contentController = WKUserContentController()
+            contentController.add(fullWebViewVC as! WKScriptMessageHandler, name: "scriptHandler")
+            webConfiguration.userContentController = contentController
             
             let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: fullWebViewParrent!.bounds.width, height: fullWebViewParrent!.bounds.height), configuration: webConfiguration)
             fullWebViewParrent?.addSubview(webView)

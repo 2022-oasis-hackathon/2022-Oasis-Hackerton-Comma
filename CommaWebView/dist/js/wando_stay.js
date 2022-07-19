@@ -7,5 +7,9 @@ $("document").ready(function () {
 });
 
 $("#wando_stay_detail").on("click", function () {
-  location.href = "./wando_stay_detail";
+  location.href = "./wando_stay_detail.html";
+});
+
+$("#back_cover").on("click", function () {
+  history.back();
 });

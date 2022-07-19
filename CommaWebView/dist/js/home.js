@@ -20,6 +20,10 @@ $("document").ready(function () {
   });
 
   $("#wando").on("click", function () {
-    location.href = "./wando.html";
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("wando");
+    } catch (error) {
+      alert(error);
+    }
   });
 });
