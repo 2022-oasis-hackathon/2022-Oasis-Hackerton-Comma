@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   height: 100vh;
+  overflow: hidden;
 }
 
 .stay-string {

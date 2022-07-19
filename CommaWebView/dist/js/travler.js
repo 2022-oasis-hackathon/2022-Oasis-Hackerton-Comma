@@ -26,6 +26,10 @@ $("document").ready(function () {
     slidesOffsetBefore: 37,
   });
   $("#travler-detail").on("click", function () {
-    location.href = "./travler_detail.html";
+    try {
+      webkit.messageHandlers.scriptHandler.postMessage("travler_detail");
+    } catch (error) {
+      alert(error);
+    }
   });
 });

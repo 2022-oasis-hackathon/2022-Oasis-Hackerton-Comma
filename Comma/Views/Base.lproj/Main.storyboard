@@ -445,7 +445,7 @@
         <!--아티클-->
         <scene sceneID="PWw-cV-dZp">
             <objects>
-                <viewController id="0v3-et-dK3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ArticleVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0v3-et-dK3" customClass="ArticleVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qo3-PB-fBd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -457,18 +457,29 @@
                                     <constraint firstAttribute="height" constant="1" id="Xak-ad-mdu"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8s-K7-snV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UIx-1e-x7E"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="k8s-K7-snV" firstAttribute="leading" secondItem="UIx-1e-x7E" secondAttribute="leading" id="6in-1m-lzO"/>
+                            <constraint firstItem="ddx-0C-9Nm" firstAttribute="top" secondItem="k8s-K7-snV" secondAttribute="bottom" id="8JU-Cy-gKV"/>
+                            <constraint firstItem="UIx-1e-x7E" firstAttribute="trailing" secondItem="k8s-K7-snV" secondAttribute="trailing" id="aeR-lQ-O8d"/>
                             <constraint firstItem="ddx-0C-9Nm" firstAttribute="leading" secondItem="qo3-PB-fBd" secondAttribute="leading" id="evG-Wz-qjs"/>
                             <constraint firstAttribute="trailing" secondItem="ddx-0C-9Nm" secondAttribute="trailing" id="gHL-jB-yOf"/>
+                            <constraint firstItem="k8s-K7-snV" firstAttribute="top" secondItem="qo3-PB-fBd" secondAttribute="top" id="tel-2C-aSs"/>
                             <constraint firstItem="UIx-1e-x7E" firstAttribute="bottom" secondItem="ddx-0C-9Nm" secondAttribute="bottom" id="ueg-n3-vXt"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="아티클" image="ArticleIconImg" id="7ew-gb-xoQ">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="articleView" destination="k8s-K7-snV" id="gAu-PL-Wgl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3d-CQ-MXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

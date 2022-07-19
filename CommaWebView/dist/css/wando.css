@@ -181,6 +181,12 @@ body {
   flex: 2;
 }
 
+#wando-community {
+  width: 93%;
+  margin-top: 7%;
+  margin-left: 7%;
+}
+
 #back {
   position: fixed;
   margin-top: 68px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,49 @@
       margin: 0;
       overflow-x: hidden;
     }
+
     img {
+      width: 110%;
+    }
+
+    #back {
+      margin-top: 78px;
       width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      margin-bottom: 59px;
+    }
+
+    #back_cover {
+      pointer-events: visible;
+      margin-left: 68px;
+      width: 100%;
+    }
+
+    #back_cover img {
+      width: 15px;
     }
   </style>
 </head>
+
 <body>
+  <div id="back">
+    <div id="back_cover">
+      <img src="../images/chevron.left.svg" alt="">
+    </div>
+  </div>
   <img src="../images/travler_detail.png" alt="">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $('#back_cover').click(function(){
+      try {
+        webkit.messageHandlers.scriptHandler.postMessage("back");
+      } catch (error) {
+        alert(error);
+      }
+    });
+  </script>
 </body>
+
 </html>

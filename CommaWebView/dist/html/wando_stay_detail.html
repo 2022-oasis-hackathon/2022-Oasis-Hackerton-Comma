@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <title>Stay</title>
+  <link rel="stylesheet" href="../css/wando_stay_detail.css">
+</head>
+
+<body>
+  <div id="back">
+    <div id="back_cover">
+      <img src="../images/stay_wando_back.svg" alt="">
+    </div>
+  </div>
+  <div id="images">
+    <img src="../images/stay_detail_img1.png" alt="" style="margin-bottom: 44px;">
+    <img src="../images/stay_detail_img2.png" alt="" id="go-detail">
+    <img src="../images/stay_detail_img3.png" alt="">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $('#back_cover').on('click', function () {
+      history.back();
+    });
+    $('#go-detail').on('click', function () {
+      location.href = './wando_stay_detail_view.html';
+    });
+  </script>
+</body>
+
+</html>
