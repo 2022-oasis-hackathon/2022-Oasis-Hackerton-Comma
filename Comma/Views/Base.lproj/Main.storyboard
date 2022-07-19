@@ -391,9 +391,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O3d-CQ-MXR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="1708"/>
+            <point key="canvasLocation" x="1526" y="1663"/>
         </scene>
-        <!--마이페이지-->
+        <!--My PageVC-->
         <scene sceneID="ndk-3n-l1y">
             <objects>
                 <viewController storyboardIdentifier="MyPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egx-VA-hUg" customClass="MyPageVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
@@ -409,8 +409,8 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VvX-Mc-1fL">
-                                <rect key="frame" x="0.0" y="104" width="414" height="708"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="664"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W3v-fV-OqS"/>
@@ -425,16 +425,29 @@
                             <constraint firstItem="VvX-Mc-1fL" firstAttribute="top" secondItem="W3v-fV-OqS" secondAttribute="top" constant="60" id="uJE-UB-OKW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이페이지" image="MyPageIconImg" id="6Ru-0P-Tbl">
-                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="MeN-6w-gGB"/>
                     <connections>
                         <outlet property="myPageTableView" destination="VvX-Mc-1fL" id="iFe-zY-L89"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKy-zE-7mw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="2384"/>
+            <point key="canvasLocation" x="1800.0000000000002" y="2383.9285714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Co3-bO-1MH">
+            <objects>
+                <viewController id="8iD-Zp-Ihf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VMx-ht-ETQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aGs-ka-JNO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lXD-zD-gj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2684" y="2392"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zFk-sC-O6P">
@@ -452,12 +465,33 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5sW-5D-jrB"/>
                         <segue destination="kcO-c9-F9l" kind="relationship" relationship="viewControllers" id="bTg-tM-yLD"/>
                         <segue destination="0v3-et-dK3" kind="relationship" relationship="viewControllers" id="kVU-el-fM8"/>
-                        <segue destination="egx-VA-hUg" kind="relationship" relationship="viewControllers" id="P5T-n1-yVc"/>
+                        <segue destination="RIv-Yo-cyq" kind="relationship" relationship="viewControllers" id="P5T-n1-yVc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmX-E6-pOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-42" y="343"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="Egk-fF-ZmV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RIv-Yo-cyq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="MyPageIconImg" id="6Ru-0P-Tbl">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sEP-UR-3bH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="egx-VA-hUg" kind="relationship" relationship="rootViewController" id="90p-mN-zvY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yr7-tw-Qba" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="2383.9285714285711"/>
         </scene>
     </scenes>
     <resources>
