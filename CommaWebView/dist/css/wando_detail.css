@@ -1,6 +1,11 @@
 body {
   overflow: hidden;
   margin: 0px;
+  height: 100vh;
+}
+
+html {
+  height: 100%;
 }
 
 .top-img img {
@@ -13,10 +18,16 @@ body {
   width: 100%;
   position: absolute;
   bottom: 0px;
+  height: 100%;
+  transform: translateY(calc(100vh - 73%));
 }
 
 .middle-view > img {
   width: 100%;
+}
+
+.middle-img {
+  bottom: 0;
 }
 
 .middle-img > img {
@@ -29,6 +40,7 @@ body {
   line-height: 27px;
   padding: 20px;
   margin-bottom: 10px;
+  bottom: 0;
 }
 
 .top-inner-img > img {
@@ -63,4 +75,10 @@ body {
 
 .slick-active > button {
   background-color: #FD8002 !important;
+}
+
+.to-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }

@@ -312,20 +312,10 @@
                                     <constraint firstAttribute="height" constant="1" id="fzx-w3-bpA"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-X6-E0d">
-                                <rect key="frame" x="163.5" y="433" width="87" height="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="move Button"/>
-                                <connections>
-                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lan-yA-dZ0"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="White"/>
                         <constraints>
-                            <constraint firstItem="4FT-X6-E0d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NUB-2t-ftW"/>
-                            <constraint firstItem="4FT-X6-E0d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PYd-a2-MHQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x9A-dj-daA" secondAttribute="bottom" id="jOW-cc-IvP"/>
                             <constraint firstItem="x9A-dj-daA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pKr-Hl-Jau"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x9A-dj-daA" secondAttribute="trailing" id="qb7-i1-NBQ"/>
@@ -342,7 +332,7 @@
         <!--Full Web ViewVC-->
         <scene sceneID="PdV-q2-fAs">
             <objects>
-                <viewController storyboardIdentifier="TestVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6EZ-Vc-puJ" customClass="FullWebViewVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullWebViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6EZ-Vc-puJ" customClass="FullWebViewVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0L6-bU-EBa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,12 +342,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhE-93-7s7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="343"/>
+            <point key="canvasLocation" x="1675" y="1006"/>
         </scene>
         <!--여정-->
         <scene sceneID="paV-Ek-keN">
             <objects>
-                <viewController id="kcO-c9-F9l" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JourneyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kcO-c9-F9l" customClass="JourneyVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BAN-zc-mrD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,12 +359,22 @@
                                     <constraint firstAttribute="height" constant="1" id="NvW-GB-oPJ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-X6-E0d">
+                                <rect key="frame" x="163.5" y="433" width="87" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="move Button"/>
+                                <connections>
+                                    <action selector="moveButton:" destination="kcO-c9-F9l" eventType="touchUpInside" id="f6f-e6-0CO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2CS-jF-jrg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2CS-jF-jrg" firstAttribute="bottom" secondItem="tSu-BG-J7h" secondAttribute="bottom" id="4cl-Jp-zxG"/>
                             <constraint firstItem="tSu-BG-J7h" firstAttribute="leading" secondItem="BAN-zc-mrD" secondAttribute="leading" id="ebY-xg-Ql9"/>
+                            <constraint firstItem="4FT-X6-E0d" firstAttribute="centerY" secondItem="BAN-zc-mrD" secondAttribute="centerY" id="gDv-Oq-5pc"/>
+                            <constraint firstItem="4FT-X6-E0d" firstAttribute="centerX" secondItem="BAN-zc-mrD" secondAttribute="centerX" id="n8D-o8-pbs"/>
                             <constraint firstAttribute="trailing" secondItem="tSu-BG-J7h" secondAttribute="trailing" id="wXF-jh-UcK"/>
                         </constraints>
                     </view>
