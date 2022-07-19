@@ -396,7 +396,7 @@
         <!--마이페이지-->
         <scene sceneID="ndk-3n-l1y">
             <objects>
-                <viewController id="egx-VA-hUg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egx-VA-hUg" customClass="MyPageVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ws7-t7-g0T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
