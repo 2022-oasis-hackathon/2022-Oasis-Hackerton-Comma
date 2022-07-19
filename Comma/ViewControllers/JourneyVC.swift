@@ -15,6 +15,9 @@ class JourneyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let webViewManager = WebViewManager.shared
         webViewManager.configureWebView(isTopView: false, isBottomView: true)
         webViewManager.getWebView(view: journeyView, viewcontoller: self ,url: "http://127.0.0.1:5500/CommaWebView/dist/html/home.html")

@@ -43,3 +43,41 @@ $("#cource_1").on("click", function () {
     alert(error);
   }
 });
+
+let observer = new MutationObserver((mutations) => {
+  // 노드가 변경 됐을 때의 작업
+  if ($(".fp-viewing-cource")[0] == undefined) {
+    $(".over-scroll-box").css("display", "flex");
+  } else {
+    $(".over-scroll-box").css("display", "none");
+  }
+});
+
+// 감시자의 설정
+let option = {
+  attributes: true,
+};
+
+observer.observe(document.querySelector("#fullpage"), option);
+
+$("#taste").on("click", function () {
+  $("#taste-img").attr("src", "../images/two_select.png");
+  $("#stay-img").attr("src", "../images/one_not.png");
+  $("#first-img").attr("src", "../images/one-not-select.png");
+  $("#second-img").attr("src", "../images/two-img.png");
+  $("#second-img").animate({ width: "50vw", flex: "2" });
+  $("#first-img").animate({ width: "16vw", flex: "1" });
+});
+
+$("#stay").on("click", function () {
+  $("#taste-img").attr("src", "../images/two_not.png");
+  $("#stay-img").attr("src", "../images/one_select.png");
+  $("#first-img").attr("src", "../images/one-img.png");
+  $("#second-img").attr("src", "../images/two-not-select.png");
+  $("#first-img").animate({ width: "50vw", flex: "2" });
+  $("#second-img").animate({ width: "16vw", flex: "1" });
+});
+
+$("#first-img").on("click", function () {
+  location.href = "./wando_stay.html";
+});
