@@ -10,30 +10,6 @@ import UIKit
 import WebKit
 
 class WebViewManager {
-<<<<<<< HEAD
-//    static let shared = WebViewManager()
-////    var webView: WKWebView
-////    var isTopView: Bool
-////    var isBottomView: Bool
-//
-//    private init() {}
-//
-//    func configureWebView(isTopView: Bool, isBottomView: Bool) {
-//
-//    }
-//
-//    func getWebView(view: UIView, url: String) {
-//        let webConfiguration = WKWebViewConfiguration()
-//        webConfiguration.allowsInlineMediaPlayback = true
-//                webConfiguration.mediaTypesRequiringUserActionForPlayback = []
-//        webConfiguration.preferences.javaScriptEnabled = true
-//        let url = URL(string: url)
-//        let request = URLRequest(url: url!)
-//        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), configuration: webConfiguration)
-//        view.addSubview(webView)
-//        webView.load(request)
-//    }
-=======
     static let shared = WebViewManager()
     var isTopView = false
     var isBottomView = false
@@ -71,5 +47,4 @@ class WebViewManager {
             viewcontoler.present(fullWebViewVC, animated: true)
         }
     }
->>>>>>> b3017a15b6ae1e8798c93227d3b9312197cc4fb3
 }
