@@ -23,6 +23,12 @@
 		F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */; };
 		F0A2B6C22886709900B33A83 /* MyPageBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */; };
 		F0A2B6C42886779500B33A83 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6C32886779500B33A83 /* MyProfileVC.swift */; };
+		F0A2B6C728867DA900B33A83 /* MyProfileTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6C528867DA900B33A83 /* MyProfileTopCell.swift */; };
+		F0A2B6C828867DA900B33A83 /* MyProfileTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6C628867DA900B33A83 /* MyProfileTopCell.xib */; };
+		F0A2B6CB28867DBC00B33A83 /* MyProfileMiddleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6C928867DBC00B33A83 /* MyProfileMiddleCell.swift */; };
+		F0A2B6CC28867DBC00B33A83 /* MyProfileMiddleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6CA28867DBC00B33A83 /* MyProfileMiddleCell.xib */; };
+		F0A2B6CF28867DD100B33A83 /* MyProfileBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6CD28867DD100B33A83 /* MyProfileBottomCell.swift */; };
+		F0A2B6D028867DD100B33A83 /* MyProfileBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6CE28867DD100B33A83 /* MyProfileBottomCell.xib */; };
 		F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */; };
 		F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */; };
 		F0A7475028852250009E4DA6 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7474F28852250009E4DA6 /* FontManager.swift */; };
@@ -60,6 +66,12 @@
 		F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBottomCell.swift; sourceTree = "<group>"; };
 		F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageBottomCell.xib; sourceTree = "<group>"; };
 		F0A2B6C32886779500B33A83 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
+		F0A2B6C528867DA900B33A83 /* MyProfileTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTopCell.swift; sourceTree = "<group>"; };
+		F0A2B6C628867DA900B33A83 /* MyProfileTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileTopCell.xib; sourceTree = "<group>"; };
+		F0A2B6C928867DBC00B33A83 /* MyProfileMiddleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileMiddleCell.swift; sourceTree = "<group>"; };
+		F0A2B6CA28867DBC00B33A83 /* MyProfileMiddleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileMiddleCell.xib; sourceTree = "<group>"; };
+		F0A2B6CD28867DD100B33A83 /* MyProfileBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileBottomCell.swift; sourceTree = "<group>"; };
+		F0A2B6CE28867DD100B33A83 /* MyProfileBottomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileBottomCell.xib; sourceTree = "<group>"; };
 		F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoEB.ttf; sourceTree = "<group>"; };
 		F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoH.ttf; sourceTree = "<group>"; };
 		F0A7474F28852250009E4DA6 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
@@ -149,6 +161,12 @@
 				F0A2B6BC2886708B00B33A83 /* MyPageTopCell.xib */,
 				F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */,
 				F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */,
+				F0A2B6C528867DA900B33A83 /* MyProfileTopCell.swift */,
+				F0A2B6C628867DA900B33A83 /* MyProfileTopCell.xib */,
+				F0A2B6C928867DBC00B33A83 /* MyProfileMiddleCell.swift */,
+				F0A2B6CA28867DBC00B33A83 /* MyProfileMiddleCell.xib */,
+				F0A2B6CD28867DD100B33A83 /* MyProfileBottomCell.swift */,
+				F0A2B6CE28867DD100B33A83 /* MyProfileBottomCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -266,12 +284,15 @@
 				F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */,
 				F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */,
 				F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */,
+				F0A2B6D028867DD100B33A83 /* MyProfileBottomCell.xib in Resources */,
 				F0A2B6C22886709900B33A83 /* MyPageBottomCell.xib in Resources */,
 				F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */,
+				F0A2B6C828867DA900B33A83 /* MyProfileTopCell.xib in Resources */,
 				F09AB6DB288175F0009D163E /* Main.storyboard in Resources */,
 				F41F02172884476900095124 /* logo.json in Resources */,
 				F41F02132884457D00095124 /* Splash.storyboard in Resources */,
 				F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */,
+				F0A2B6CC28867DBC00B33A83 /* MyProfileMiddleCell.xib in Resources */,
 				F0A2B6BE2886708B00B33A83 /* MyPageTopCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,13 +360,16 @@
 				F0A7477C28853D70009E4DA6 /* FirstOnboardingPageVC.swift in Sources */,
 				F0A7477E28853D95009E4DA6 /* LastOnboardingPageVC.swift in Sources */,
 				F0A7478428855D74009E4DA6 /* LoginVC.swift in Sources */,
+				F0A2B6CF28867DD100B33A83 /* MyProfileBottomCell.swift in Sources */,
 				F0A747522885225F009E4DA6 /* ColorManager.swift in Sources */,
 				F09AB6D8288175F0009D163E /* CourseRegisterVC.swift in Sources */,
 				F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */,
 				F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */,
 				F41F021128843F6C00095124 /* SplashVC.swift in Sources */,
+				F0A2B6CB28867DBC00B33A83 /* MyProfileMiddleCell.swift in Sources */,
 				F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */,
 				F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */,
+				F0A2B6C728867DA900B33A83 /* MyProfileTopCell.swift in Sources */,
 				F0A2B6C42886779500B33A83 /* MyProfileVC.swift in Sources */,
 				F0A7475028852250009E4DA6 /* FontManager.swift in Sources */,
 				F0A7475428852275009E4DA6 /* UserDefaultsManager.swift in Sources */,

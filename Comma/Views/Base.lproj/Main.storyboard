@@ -454,12 +454,20 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nCR-kD-hjs">
+                                <rect key="frame" x="0.0" y="129.5" width="414" height="732.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aGs-ka-JNO"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RjW-v2-1lI" firstAttribute="top" secondItem="aGs-ka-JNO" secondAttribute="top" constant="24" id="ArQ-db-Lj9"/>
                             <constraint firstItem="Rvi-cq-8Au" firstAttribute="centerY" secondItem="RjW-v2-1lI" secondAttribute="centerY" id="Bmh-Gm-VYM"/>
+                            <constraint firstItem="nCR-kD-hjs" firstAttribute="top" secondItem="Rvi-cq-8Au" secondAttribute="bottom" constant="40" id="C0r-QU-uNY"/>
+                            <constraint firstItem="aGs-ka-JNO" firstAttribute="trailing" secondItem="nCR-kD-hjs" secondAttribute="trailing" id="PbN-bJ-nAG"/>
+                            <constraint firstItem="aGs-ka-JNO" firstAttribute="bottom" secondItem="nCR-kD-hjs" secondAttribute="bottom" id="Yql-w3-Wnh"/>
+                            <constraint firstItem="nCR-kD-hjs" firstAttribute="leading" secondItem="aGs-ka-JNO" secondAttribute="leading" id="kg8-Og-xEG"/>
                             <constraint firstItem="Rvi-cq-8Au" firstAttribute="centerX" secondItem="VMx-ht-ETQ" secondAttribute="centerX" id="pIl-ti-7Re"/>
                             <constraint firstItem="RjW-v2-1lI" firstAttribute="leading" secondItem="aGs-ka-JNO" secondAttribute="leading" constant="24" id="xF8-mW-bOq"/>
                         </constraints>

@@ -8,8 +8,14 @@
 import UIKit
 
 class MyProfileVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initUI()
+    }
+    
+    private func initUI(){
+        // UINavigationController
+        self.navigationController?.navigationBar.isHidden = true
     }
 }
