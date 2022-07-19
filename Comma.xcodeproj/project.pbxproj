@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09F31F10344434C7F8DA271F /* Pods_Comma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3932886EFEACEC6D8922245 /* Pods_Comma.framework */; };
+		F007F6AE288703B100B837C1 /* MyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007F6AD288703B100B837C1 /* MyLocationVC.swift */; };
 		F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F08057D3288593E200CB0C35 /* Wando.mp4 */; };
 		F08057D628859D0900CB0C35 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08057D528859D0900CB0C35 /* NameVC.swift */; };
 		F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0984ED62881846500707FC9 /* GoogleService-Info.plist */; };
@@ -42,6 +43,8 @@
 		F0D055D02886C096005DD345 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055CF2886C096005DD345 /* WebViewManager.swift */; };
 		F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055D12886C206005DD345 /* FullWebViewVC.swift */; };
 		F0D055D42886C7D1005DD345 /* MyPassportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055D32886C7D1005DD345 /* MyPassportVC.swift */; };
+		F0D511BB288716F600FC126F /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D511BA288716F500FC126F /* MapVC.swift */; };
+		F0D511BD28871E2F00FC126F /* StampVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D511BC28871E2F00FC126F /* StampVC.swift */; };
 		F41F021128843F6C00095124 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F021028843F6C00095124 /* SplashVC.swift */; };
 		F41F02132884457D00095124 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F02122884457D00095124 /* Splash.storyboard */; };
 		F41F02172884476900095124 /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = F41F02162884476900095124 /* logo.json */; };
@@ -52,6 +55,7 @@
 		55911E2B50CBE8B600636284 /* Pods-Comma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comma.debug.xcconfig"; path = "Target Support Files/Pods-Comma/Pods-Comma.debug.xcconfig"; sourceTree = "<group>"; };
 		B3932886EFEACEC6D8922245 /* Pods_Comma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95852949A4124799DE387DE /* Pods-Comma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comma.release.xcconfig"; path = "Target Support Files/Pods-Comma/Pods-Comma.release.xcconfig"; sourceTree = "<group>"; };
+		F007F6AD288703B100B837C1 /* MyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationVC.swift; sourceTree = "<group>"; };
 		F08057D3288593E200CB0C35 /* Wando.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Wando.mp4; path = CommaWebView/dist/videos/Wando.mp4; sourceTree = SOURCE_ROOT; };
 		F08057D528859D0900CB0C35 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
 		F0984ED62881846500707FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		F0D055CF2886C096005DD345 /* WebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
 		F0D055D12886C206005DD345 /* FullWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWebViewVC.swift; sourceTree = "<group>"; };
 		F0D055D32886C7D1005DD345 /* MyPassportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPassportVC.swift; sourceTree = "<group>"; };
+		F0D511BA288716F500FC126F /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		F0D511BC28871E2F00FC126F /* StampVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampVC.swift; sourceTree = "<group>"; };
 		F41F021028843F6C00095124 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F41F02122884457D00095124 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		F41F02162884476900095124 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
@@ -203,6 +209,9 @@
 				F0D055D12886C206005DD345 /* FullWebViewVC.swift */,
 				F0D055D32886C7D1005DD345 /* MyPassportVC.swift */,
 				F44B33312886C90500F1C282 /* JourneyVC.swift */,
+				F007F6AD288703B100B837C1 /* MyLocationVC.swift */,
+				F0D511BA288716F500FC126F /* MapVC.swift */,
+				F0D511BC28871E2F00FC126F /* StampVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -367,7 +376,9 @@
 				F44B33322886C90500F1C282 /* JourneyVC.swift in Sources */,
 				F0A2B6CB28867DBC00B33A83 /* MyProfileMiddleCell.swift in Sources */,
 				F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */,
+				F007F6AE288703B100B837C1 /* MyLocationVC.swift in Sources */,
 				F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */,
+				F0D511BB288716F600FC126F /* MapVC.swift in Sources */,
 				F0A2B6C728867DA900B33A83 /* MyProfileTopCell.swift in Sources */,
 				F0A2B6C42886779500B33A83 /* MyProfileVC.swift in Sources */,
 				F0A7475028852250009E4DA6 /* FontManager.swift in Sources */,
@@ -376,6 +387,7 @@
 				F09AB6D6288175F0009D163E /* SceneDelegate.swift in Sources */,
 				F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */,
 				F0D055D42886C7D1005DD345 /* MyPassportVC.swift in Sources */,
+				F0D511BD28871E2F00FC126F /* StampVC.swift in Sources */,
 				F08057D628859D0900CB0C35 /* NameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

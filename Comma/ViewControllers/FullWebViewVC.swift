@@ -14,6 +14,7 @@ class FullWebViewVC: UIViewController {
     // UILabel
     @IBOutlet weak var titleLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -676,13 +676,6 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="내 위치 공유하고 챌린지 참여하기"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShareIcon" translatesAutoresizingMaskIntoConstraints="NO" id="UX4-W6-X18">
-                                <rect key="frame" x="358" y="69" width="20" height="20"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="QDQ-ds-Cux"/>
-                                    <constraint firstAttribute="width" constant="20" id="QDf-4y-Kpf"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-zi-wWq">
                                 <rect key="frame" x="0.0" y="757.5" width="414" height="1"/>
                                 <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
@@ -694,13 +687,11 @@
                         <viewLayoutGuide key="safeArea" id="L3v-Jd-StD"/>
                         <color key="backgroundColor" name="White"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="UX4-W6-X18" secondAttribute="trailing" constant="36" id="2CZ-4Q-3mq"/>
                             <constraint firstItem="S9m-GY-VS4" firstAttribute="top" secondItem="L3v-Jd-StD" secondAttribute="top" constant="24" id="3mB-b6-3DM"/>
                             <constraint firstItem="L3v-Jd-StD" firstAttribute="trailing" secondItem="j0J-zi-wWq" secondAttribute="trailing" id="4Hw-Yx-ZBt"/>
                             <constraint firstItem="wRW-0K-SMg" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" constant="31" id="EkD-1d-YiY"/>
                             <constraint firstItem="j0J-zi-wWq" firstAttribute="top" secondItem="wRW-0K-SMg" secondAttribute="bottom" constant="24" id="Ie1-x6-XqH"/>
                             <constraint firstItem="PEU-NC-gUg" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" constant="31" id="JWb-dW-k5Y"/>
-                            <constraint firstItem="UX4-W6-X18" firstAttribute="centerY" secondItem="I42-LO-IUU" secondAttribute="centerY" id="KXa-KG-rki"/>
                             <constraint firstItem="wRW-0K-SMg" firstAttribute="top" secondItem="PEU-NC-gUg" secondAttribute="bottom" constant="20" id="Olt-rR-wiB"/>
                             <constraint firstItem="PEU-NC-gUg" firstAttribute="top" secondItem="YOn-I4-VRx" secondAttribute="bottom" id="TuI-aS-JYR"/>
                             <constraint firstItem="j0J-zi-wWq" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" id="buw-9W-GAp"/>
@@ -715,13 +706,195 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="S9m-GY-VS4" id="kZo-NS-pd0"/>
                         <outlet property="chanllengeButton" destination="wRW-0K-SMg" id="XQS-tW-QAP"/>
+                        <outlet property="stampImageView" destination="hvr-VC-9Of" id="Mf4-tQ-kF0"/>
                         <outlet property="titleLabel" destination="I42-LO-IUU" id="6U7-tM-RKA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8T-3G-Otc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2683" y="3072"/>
+        </scene>
+        <!--My LocationVC-->
+        <scene sceneID="Zoc-z9-iwG">
+            <objects>
+                <viewController storyboardIdentifier="MyLocationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1bP-V7-lHR" customClass="MyLocationVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0W-Dg-24M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht4-Q6-3Kf">
+                                <rect key="frame" x="24" y="68" width="12.5" height="22"/>
+                                <color key="backgroundColor" name="White"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mwb-TI-RQS">
+                                <rect key="frame" x="134" y="424.5" width="146" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eddy님의" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y5-Zp-5GA">
+                                        <rect key="frame" x="0.0" y="0.0" width="146" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 위치를 찾을게요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOX-yx-0dV">
+                                        <rect key="frame" x="0.0" y="26.5" width="146" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1z-F2-F2O">
+                                <rect key="frame" x="31" y="789" width="352" height="57"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="J1m-tx-6IH"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="나의 위치 찾기"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SgF-gb-AXt"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="SgF-gb-AXt" firstAttribute="bottom" secondItem="W1z-F2-F2O" secondAttribute="bottom" constant="16" id="08b-L9-Suf"/>
+                            <constraint firstItem="Mwb-TI-RQS" firstAttribute="centerX" secondItem="f0W-Dg-24M" secondAttribute="centerX" id="CcP-F5-ddN"/>
+                            <constraint firstItem="ht4-Q6-3Kf" firstAttribute="top" secondItem="SgF-gb-AXt" secondAttribute="top" constant="24" id="LNC-yP-KIM"/>
+                            <constraint firstItem="W1z-F2-F2O" firstAttribute="leading" secondItem="SgF-gb-AXt" secondAttribute="leading" constant="31" id="nbF-jx-qlj"/>
+                            <constraint firstItem="Mwb-TI-RQS" firstAttribute="centerY" secondItem="f0W-Dg-24M" secondAttribute="centerY" id="pbw-vf-yY3"/>
+                            <constraint firstItem="ht4-Q6-3Kf" firstAttribute="leading" secondItem="SgF-gb-AXt" secondAttribute="leading" constant="24" id="vZ3-sU-TxM"/>
+                            <constraint firstItem="SgF-gb-AXt" firstAttribute="trailing" secondItem="W1z-F2-F2O" secondAttribute="trailing" constant="31" id="wNL-eB-fEe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstTitleLabel" destination="2Y5-Zp-5GA" id="V6X-xM-v80"/>
+                        <outlet property="locationSearchButton" destination="W1z-F2-F2O" id="GFa-rw-6L9"/>
+                        <outlet property="secondTitleLabel" destination="aOX-yx-0dV" id="8JE-KD-AHA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dw2-V4-EWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3449" y="3072"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="IRH-oO-4ls">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9XV-8G-bk1" customClass="MapVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ntd-1q-1DG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="so7-RU-GYS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sNS-1D-g4O"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstItem="so7-RU-GYS" firstAttribute="leading" secondItem="sNS-1D-g4O" secondAttribute="leading" id="5LL-32-Q2O"/>
+                            <constraint firstAttribute="bottom" secondItem="so7-RU-GYS" secondAttribute="bottom" id="c2f-Fu-vYE"/>
+                            <constraint firstItem="so7-RU-GYS" firstAttribute="top" secondItem="Ntd-1q-1DG" secondAttribute="top" id="hnI-sa-B0T"/>
+                            <constraint firstItem="sNS-1D-g4O" firstAttribute="trailing" secondItem="so7-RU-GYS" secondAttribute="trailing" id="o15-uV-mN4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="so7-RU-GYS" id="Jfy-S2-YIh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noX-Oe-j5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4214" y="3072"/>
+        </scene>
+        <!--StampVC-->
+        <scene sceneID="DTu-8e-A8V">
+            <objects>
+                <viewController storyboardIdentifier="StampVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="za7-Ef-ReT" customClass="StampVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="12E-Ah-keb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9MX-zH-l7i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Msv-JW-rvH">
+                                <rect key="frame" x="59" y="306" width="296" height="284"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QAR-WQ-ihE">
+                                        <rect key="frame" x="15" y="22" width="266" height="247"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StampYeosu4x" translatesAutoresizingMaskIntoConstraints="NO" id="XZO-gX-tlm">
+                                                <rect key="frame" x="0.0" y="0.0" width="266" height="99"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="99" id="6LH-6U-7MD"/>
+                                                    <constraint firstAttribute="width" constant="266" id="YtF-q5-bDM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fQP-NX-HGR">
+                                                <rect key="frame" x="0.0" y="119" width="266" height="51"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="여수 여행 7일차" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpO-uW-YXz">
+                                                        <rect key="frame" x="80" y="0.0" width="106.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인증이 완료 되었습니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaN-OO-t1T">
+                                                        <rect key="frame" x="53" y="23.5" width="160.5" height="27.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYP-Wz-TI8">
+                                                <rect key="frame" x="0.0" y="190" width="266" height="57"/>
+                                                <color key="backgroundColor" red="0.15686274509803921" green="0.41176470588235292" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="Jt0-n3-uKh"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="스탬프 확인하기"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstItem="QAR-WQ-ihE" firstAttribute="top" secondItem="Msv-JW-rvH" secondAttribute="top" constant="22" id="Cr0-Al-XWe"/>
+                                    <constraint firstAttribute="bottom" secondItem="QAR-WQ-ihE" secondAttribute="bottom" constant="15" id="DNn-g2-Mbq"/>
+                                    <constraint firstItem="QAR-WQ-ihE" firstAttribute="leading" secondItem="Msv-JW-rvH" secondAttribute="leading" constant="15" id="FFX-qA-v2L"/>
+                                    <constraint firstAttribute="height" constant="284" id="Fx6-Eh-aeD"/>
+                                    <constraint firstAttribute="trailing" secondItem="QAR-WQ-ihE" secondAttribute="trailing" constant="15" id="IBK-Gs-6Ed"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q9p-Qh-CuC"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Msv-JW-rvH" firstAttribute="centerY" secondItem="12E-Ah-keb" secondAttribute="centerY" id="2q1-rb-V1e"/>
+                            <constraint firstItem="Msv-JW-rvH" firstAttribute="centerX" secondItem="12E-Ah-keb" secondAttribute="centerX" id="9r8-U0-b1C"/>
+                            <constraint firstItem="9MX-zH-l7i" firstAttribute="top" secondItem="12E-Ah-keb" secondAttribute="top" id="F0Z-23-Ewv"/>
+                            <constraint firstAttribute="bottom" secondItem="9MX-zH-l7i" secondAttribute="bottom" id="Hif-V6-k64"/>
+                            <constraint firstItem="Q9p-Qh-CuC" firstAttribute="trailing" secondItem="9MX-zH-l7i" secondAttribute="trailing" id="Rxb-aK-Ydy"/>
+                            <constraint firstItem="9MX-zH-l7i" firstAttribute="leading" secondItem="Q9p-Qh-CuC" secondAttribute="leading" id="xU0-iJ-num"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="checkStampButton" destination="SYP-Wz-TI8" id="Vhh-RZ-gg4"/>
+                        <outlet property="completionContainerView" destination="Msv-JW-rvH" id="0AH-Cd-1Oe"/>
+                        <outlet property="containerView" destination="9MX-zH-l7i" id="6st-FM-JqO"/>
+                        <outlet property="firstLabel" destination="BpO-uW-YXz" id="3bW-4y-FaX"/>
+                        <outlet property="secondLabel" destination="zaN-OO-t1T" id="Iih-CR-Qwl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fQ-8L-UBU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5017" y="3072"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zFk-sC-O6P">
@@ -779,7 +952,7 @@
         <image name="MyPageIconImg" width="28.5" height="28.5"/>
         <image name="MyPassportTitleImg" width="780" height="332"/>
         <image name="OnboardingTitleImage" width="444.5" height="245"/>
-        <image name="ShareIcon" width="18.5" height="20"/>
+        <image name="StampYeosu4x" width="532" height="215.5"/>
         <image name="TravelIconImg" width="33.5" height="29.5"/>
         <image name="UncompletedStampDamyang" width="215" height="214.5"/>
         <image name="UncompletedStampMokpo" width="214.5" height="214.5"/>
