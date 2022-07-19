@@ -40,5 +40,9 @@ class ColorManager {
     func getFavoriteCategoryDisableColor() -> UIColor {
         return UIColor(named: "FavoriteCategoryUnclickedBackgroundColor")!
     }
+    
+    func getStampColor() -> UIColor {
+        return UIColor(named: "StampColor")!
+    }
 }
 

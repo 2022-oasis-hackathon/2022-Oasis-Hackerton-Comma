@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "CompletedStampGunsan.png",
+      "filename" : "FinishCertificationImg4x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "CompletedStampGunsan-1.png",
+      "filename" : "FinishCertificationImg4x-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "CompletedStampGunsan-2.png",
+      "filename" : "FinishCertificationImg4x-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
