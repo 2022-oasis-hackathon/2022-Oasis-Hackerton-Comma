@@ -26,7 +26,7 @@ class WebViewManager {
         webConfiguration.allowsInlineMediaPlayback = true
                 webConfiguration.mediaTypesRequiringUserActionForPlayback = []
         webConfiguration.preferences.javaScriptEnabled = true
-        let url = URL(string: "http://127.0.0.1:5500" + url)
+        let url = URL(string: "http://oripk.xyz:5500" + url)
         let request = URLRequest(url: url!)
         
         if (self.isBottomView) {
