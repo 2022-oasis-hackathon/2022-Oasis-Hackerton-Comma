@@ -5,7 +5,6 @@
 //  Created by 임채승 on 2022/07/17.
 //
 
-import Flutter
 import FlutterPluginRegistrant
 import Foundation
 

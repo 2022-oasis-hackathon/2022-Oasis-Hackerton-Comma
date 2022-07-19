@@ -11,25 +11,40 @@ import WebKit
 
 class WebViewManager {
     static let shared = WebViewManager()
-    var webView: WKWebView
-    var isTopView: Bool
-    var isBottomView: Bool
+    var isTopView = false
+    var isBottomView = false
     
     private init() {}
     
     func configureWebView(isTopView: Bool, isBottomView: Bool) {
-        
+        self.isTopView = isTopView
+        self.isBottomView = isBottomView
     }
     
-    func getWebView(view: UIView, url: String) {
+    func getWebView(view: UIView, viewcontoler: UIViewController, url: String) {
         let webConfiguration = WKWebViewConfiguration()
         webConfiguration.allowsInlineMediaPlayback = true
                 webConfiguration.mediaTypesRequiringUserActionForPlayback = []
         webConfiguration.preferences.javaScriptEnabled = true
+        
         let url = URL(string: url)
         let request = URLRequest(url: url!)
-        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), configuration: webConfiguration)
-        view.addSubview(webView)
-        webView.load(request)
+        
+        if (self.isBottomView) {
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), configuration: webConfiguration)
+            view.addSubview(webView)
+            webView.load(request)
+
+        } else {
+            let fullWebViewVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullWebViewVC") as! FullWebViewVC
+            let fullWebViewParrent = fullWebViewVC.view
+            
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: fullWebViewParrent!.bounds.width, height: fullWebViewParrent!.bounds.height), configuration: webConfiguration)
+            fullWebViewParrent?.addSubview(webView)
+            webView.load(request)
+            
+            fullWebViewVC.modalPresentationStyle = .overFullScreen
+            viewcontoler.present(fullWebViewVC, animated: true)
+        }
     }
 }

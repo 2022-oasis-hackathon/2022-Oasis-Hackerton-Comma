@@ -41,10 +41,10 @@
 		F0A7478428855D74009E4DA6 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7478328855D74009E4DA6 /* LoginVC.swift */; };
 		F0D055D02886C096005DD345 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055CF2886C096005DD345 /* WebViewManager.swift */; };
 		F0D055D22886C206005DD345 /* FullWebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D055D12886C206005DD345 /* FullWebViewVC.swift */; };
-		F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F02082883C68C00095124 /* CommaFlutterVC.swift */; };
 		F41F021128843F6C00095124 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F021028843F6C00095124 /* SplashVC.swift */; };
 		F41F02132884457D00095124 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F02122884457D00095124 /* Splash.storyboard */; };
 		F41F02172884476900095124 /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = F41F02162884476900095124 /* logo.json */; };
+		F44B33322886C90500F1C282 /* JourneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B33312886C90500F1C282 /* JourneyVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,10 +86,10 @@
 		F0A7478328855D74009E4DA6 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F0D055CF2886C096005DD345 /* WebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
 		F0D055D12886C206005DD345 /* FullWebViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWebViewVC.swift; sourceTree = "<group>"; };
-		F41F02082883C68C00095124 /* CommaFlutterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommaFlutterVC.swift; sourceTree = "<group>"; };
 		F41F021028843F6C00095124 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		F41F02122884457D00095124 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		F41F02162884476900095124 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
+		F44B33312886C90500F1C282 /* JourneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				F09AB6D7288175F0009D163E /* CourseRegisterVC.swift */,
-				F41F02082883C68C00095124 /* CommaFlutterVC.swift */,
 				F41F021028843F6C00095124 /* SplashVC.swift */,
 				F0A7477B28853D6F009E4DA6 /* FirstOnboardingPageVC.swift */,
 				F0A7477D28853D95009E4DA6 /* LastOnboardingPageVC.swift */,
@@ -200,6 +199,7 @@
 				F0A2B6B828866ECB00B33A83 /* MyPageVC.swift */,
 				F0A2B6C32886779500B33A83 /* MyProfileVC.swift */,
 				F0D055D12886C206005DD345 /* FullWebViewVC.swift */,
+				F44B33312886C90500F1C282 /* JourneyVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,7 +232,6 @@
 			buildConfigurationList = F09AB6E4288175F1009D163E /* Build configuration list for PBXNativeTarget "Comma" */;
 			buildPhases = (
 				225D103B75E1BCE19187C4A0 /* [CP] Check Pods Manifest.lock */,
-				2BC33DD6D6678280F40F44C0 /* [CP-User] Run Flutter Build flutter_comma Script */,
 				F09AB6CC288175F0009D163E /* Sources */,
 				F09AB6CD288175F0009D163E /* Frameworks */,
 				F09AB6CE288175F0009D163E /* Resources */,
@@ -328,16 +327,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2BC33DD6D6678280F40F44C0 /* [CP-User] Run Flutter Build flutter_comma Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Run Flutter Build flutter_comma Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/flutter_comma/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
-		};
 		74AD5F2ABAB880AFB3939487 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,9 +359,9 @@
 				F0A747522885225F009E4DA6 /* ColorManager.swift in Sources */,
 				F09AB6D8288175F0009D163E /* CourseRegisterVC.swift in Sources */,
 				F0D055D02886C096005DD345 /* WebViewManager.swift in Sources */,
-				F41F02092883C68C00095124 /* CommaFlutterVC.swift in Sources */,
 				F0A7478028853DC9009E4DA6 /* OnBoardingPageVC.swift in Sources */,
 				F41F021128843F6C00095124 /* SplashVC.swift in Sources */,
+				F44B33322886C90500F1C282 /* JourneyVC.swift in Sources */,
 				F0A2B6CB28867DBC00B33A83 /* MyProfileMiddleCell.swift in Sources */,
 				F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */,
 				F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */,

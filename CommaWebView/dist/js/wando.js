@@ -3,6 +3,9 @@ new fullpage("#fullpage", {
   licenseKey: "gplv3-license",
   autoScrolling: true,
   scrollHorizontally: true,
+  afterLoad() {
+    $("body").css("height", "100vh");
+  },
 });
 
 document.getElementsByClassName("fp-watermark")[0].remove();
