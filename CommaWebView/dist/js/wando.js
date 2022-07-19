@@ -36,6 +36,10 @@ $("#backgroundVideo").on("pause", function () {
 });
 
 $("#cource_1").on("click", function () {
-  // TODO: event to ios
-  location.href = "./wando_detail.html";
+  console.log("asdf");
+  try {
+    webkit.messageHandlers.scriptHandler.postMessage("wando_detail");
+  } catch (error) {
+    alert(error);
+  }
 });

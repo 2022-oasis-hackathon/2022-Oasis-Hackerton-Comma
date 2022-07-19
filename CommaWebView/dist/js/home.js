@@ -18,4 +18,8 @@ $("document").ready(function () {
     slidesOffsetBefore: 20,
     slidesOffsetAfter: 20,
   });
+
+  $("#wando").on("click", function () {
+    location.href = "./wando.html";
+  });
 });

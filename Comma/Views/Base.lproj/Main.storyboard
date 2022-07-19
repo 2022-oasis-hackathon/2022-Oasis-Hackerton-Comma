@@ -342,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EhE-93-7s7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675" y="1006"/>
+            <point key="canvasLocation" x="2138" y="972"/>
         </scene>
         <!--여정-->
         <scene sceneID="paV-Ek-keN">
@@ -359,28 +359,29 @@
                                     <constraint firstAttribute="height" constant="1" id="NvW-GB-oPJ"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-X6-E0d">
-                                <rect key="frame" x="163.5" y="433" width="87" height="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="move Button"/>
-                                <connections>
-                                    <action selector="moveButton:" destination="kcO-c9-F9l" eventType="touchUpInside" id="f6f-e6-0CO"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYW-qe-bq9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2CS-jF-jrg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2CS-jF-jrg" firstAttribute="bottom" secondItem="tSu-BG-J7h" secondAttribute="bottom" id="4cl-Jp-zxG"/>
+                            <constraint firstItem="RYW-qe-bq9" firstAttribute="leading" secondItem="2CS-jF-jrg" secondAttribute="leading" id="8wu-Za-QHA"/>
+                            <constraint firstItem="RYW-qe-bq9" firstAttribute="top" secondItem="BAN-zc-mrD" secondAttribute="top" id="Nx1-hz-3mI"/>
+                            <constraint firstItem="tSu-BG-J7h" firstAttribute="top" secondItem="RYW-qe-bq9" secondAttribute="bottom" id="aWH-sQ-zBI"/>
                             <constraint firstItem="tSu-BG-J7h" firstAttribute="leading" secondItem="BAN-zc-mrD" secondAttribute="leading" id="ebY-xg-Ql9"/>
-                            <constraint firstItem="4FT-X6-E0d" firstAttribute="centerY" secondItem="BAN-zc-mrD" secondAttribute="centerY" id="gDv-Oq-5pc"/>
-                            <constraint firstItem="4FT-X6-E0d" firstAttribute="centerX" secondItem="BAN-zc-mrD" secondAttribute="centerX" id="n8D-o8-pbs"/>
+                            <constraint firstItem="2CS-jF-jrg" firstAttribute="trailing" secondItem="RYW-qe-bq9" secondAttribute="trailing" id="n0S-wU-Rif"/>
                             <constraint firstAttribute="trailing" secondItem="tSu-BG-J7h" secondAttribute="trailing" id="wXF-jh-UcK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="여정" image="TravelIconImg" id="Il5-NK-YhP">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="journeyView" destination="RYW-qe-bq9" id="qez-ss-EK9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sg2-1K-BQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -537,7 +538,7 @@
                     <tabBar key="tabBar" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="5Wf-cS-uxE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="White"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
