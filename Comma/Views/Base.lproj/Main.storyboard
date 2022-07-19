@@ -529,6 +529,144 @@
             </objects>
             <point key="canvasLocation" x="2684" y="2392"/>
         </scene>
+        <!--My PassportVC-->
+        <scene sceneID="zeg-cl-fg3">
+            <objects>
+                <viewController storyboardIdentifier="MyPassportVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p7D-nc-o5f" customClass="MyPassportVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faf-X3-1l8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9m-GY-VS4">
+                                <rect key="frame" x="24" y="68" width="12.5" height="22"/>
+                                <color key="backgroundColor" name="White"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 Passport" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I42-LO-IUU">
+                                <rect key="frame" x="156.5" y="69" width="101.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyPassportTitleImg" translatesAutoresizingMaskIntoConstraints="NO" id="YOn-I4-VRx">
+                                <rect key="frame" x="0.0" y="89.5" width="414" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="rqI-Cv-9nD"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PEU-NC-gUg">
+                                <rect key="frame" x="31" y="309.5" width="352" height="347"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Uka-VP-rkw">
+                                        <rect key="frame" x="0.0" y="0.0" width="352" height="105"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CompletedStampSuncheon4x" translatesAutoresizingMaskIntoConstraints="NO" id="IsP-DW-VYW">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="105" id="wEb-7y-2Ew"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CompletedStampGunsan4x" translatesAutoresizingMaskIntoConstraints="NO" id="bVo-1O-fJf">
+                                                <rect key="frame" x="122.5" y="0.0" width="107" height="105"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UncompletedStampYeosu4x" translatesAutoresizingMaskIntoConstraints="NO" id="hvr-VC-9Of">
+                                                <rect key="frame" x="245.5" y="0.0" width="106.5" height="105"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="TdI-A2-tcV">
+                                        <rect key="frame" x="0.0" y="121" width="352" height="105"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UncompletedStampDamyang" translatesAutoresizingMaskIntoConstraints="NO" id="DlW-OP-LJZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="105" id="H3g-67-Io0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UncompletedStampMokpo" translatesAutoresizingMaskIntoConstraints="NO" id="iOB-ht-Cl9">
+                                                <rect key="frame" x="122.5" y="0.0" width="107" height="105"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyStamp" translatesAutoresizingMaskIntoConstraints="NO" id="Wy8-Bu-osi">
+                                                <rect key="frame" x="245.5" y="0.0" width="106.5" height="105"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="wC1-FH-7Ti">
+                                        <rect key="frame" x="0.0" y="242" width="352" height="105"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyStamp" translatesAutoresizingMaskIntoConstraints="NO" id="KHA-mQ-uk0">
+                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="105" id="zBj-Sd-HjZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyStamp" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-M5-TcV">
+                                                <rect key="frame" x="122.5" y="0.0" width="107" height="105"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmptyStamp" translatesAutoresizingMaskIntoConstraints="NO" id="gc0-fi-OCj">
+                                                <rect key="frame" x="245.5" y="0.0" width="106.5" height="105"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRW-0K-SMg">
+                                <rect key="frame" x="31" y="676.5" width="352" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="vdf-C9-r9f"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="내 위치 공유하고 챌린지 참여하기"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShareIcon" translatesAutoresizingMaskIntoConstraints="NO" id="UX4-W6-X18">
+                                <rect key="frame" x="358" y="69" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="QDQ-ds-Cux"/>
+                                    <constraint firstAttribute="width" constant="20" id="QDf-4y-Kpf"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j0J-zi-wWq">
+                                <rect key="frame" x="0.0" y="757.5" width="414" height="1"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Pqs-f0-PoS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L3v-Jd-StD"/>
+                        <color key="backgroundColor" name="White"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UX4-W6-X18" secondAttribute="trailing" constant="36" id="2CZ-4Q-3mq"/>
+                            <constraint firstItem="S9m-GY-VS4" firstAttribute="top" secondItem="L3v-Jd-StD" secondAttribute="top" constant="24" id="3mB-b6-3DM"/>
+                            <constraint firstItem="L3v-Jd-StD" firstAttribute="trailing" secondItem="j0J-zi-wWq" secondAttribute="trailing" id="4Hw-Yx-ZBt"/>
+                            <constraint firstItem="wRW-0K-SMg" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" constant="31" id="EkD-1d-YiY"/>
+                            <constraint firstItem="j0J-zi-wWq" firstAttribute="top" secondItem="wRW-0K-SMg" secondAttribute="bottom" constant="24" id="Ie1-x6-XqH"/>
+                            <constraint firstItem="PEU-NC-gUg" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" constant="31" id="JWb-dW-k5Y"/>
+                            <constraint firstItem="UX4-W6-X18" firstAttribute="centerY" secondItem="I42-LO-IUU" secondAttribute="centerY" id="KXa-KG-rki"/>
+                            <constraint firstItem="wRW-0K-SMg" firstAttribute="top" secondItem="PEU-NC-gUg" secondAttribute="bottom" constant="20" id="Olt-rR-wiB"/>
+                            <constraint firstItem="PEU-NC-gUg" firstAttribute="top" secondItem="YOn-I4-VRx" secondAttribute="bottom" id="TuI-aS-JYR"/>
+                            <constraint firstItem="j0J-zi-wWq" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" id="buw-9W-GAp"/>
+                            <constraint firstItem="S9m-GY-VS4" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" constant="24" id="foS-2s-5t0"/>
+                            <constraint firstItem="L3v-Jd-StD" firstAttribute="trailing" secondItem="PEU-NC-gUg" secondAttribute="trailing" constant="31" id="gkQ-KX-Nfa"/>
+                            <constraint firstItem="I42-LO-IUU" firstAttribute="centerY" secondItem="S9m-GY-VS4" secondAttribute="centerY" id="iPd-BO-UTM"/>
+                            <constraint firstItem="YOn-I4-VRx" firstAttribute="top" secondItem="I42-LO-IUU" secondAttribute="bottom" id="oet-Rm-2eD"/>
+                            <constraint firstItem="YOn-I4-VRx" firstAttribute="leading" secondItem="L3v-Jd-StD" secondAttribute="leading" id="s8k-pI-H39"/>
+                            <constraint firstItem="I42-LO-IUU" firstAttribute="centerX" secondItem="faf-X3-1l8" secondAttribute="centerX" id="tLl-t8-tXO"/>
+                            <constraint firstItem="L3v-Jd-StD" firstAttribute="trailing" secondItem="YOn-I4-VRx" secondAttribute="trailing" id="uMo-dz-woz"/>
+                            <constraint firstItem="L3v-Jd-StD" firstAttribute="trailing" secondItem="wRW-0K-SMg" secondAttribute="trailing" constant="31" id="z3X-08-7Nc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chanllengeButton" destination="wRW-0K-SMg" id="XQS-tW-QAP"/>
+                        <outlet property="titleLabel" destination="I42-LO-IUU" id="6U7-tM-RKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8T-3G-Otc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2683" y="3072"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="zFk-sC-O6P">
             <objects>
@@ -577,11 +715,19 @@
     <resources>
         <image name="AppleLoginImg" width="644" height="96"/>
         <image name="ArticleIconImg" width="32" height="32"/>
+        <image name="CompletedStampGunsan4x" width="215" height="215"/>
+        <image name="CompletedStampSuncheon4x" width="215" height="215"/>
         <image name="CosIconImg" width="16" height="21"/>
+        <image name="EmptyStamp" width="215" height="215"/>
         <image name="KakaoLoginImg" width="640" height="96"/>
         <image name="MyPageIconImg" width="28.5" height="28.5"/>
+        <image name="MyPassportTitleImg" width="780" height="332"/>
         <image name="OnboardingTitleImage" width="444.5" height="245"/>
+        <image name="ShareIcon" width="18.5" height="20"/>
         <image name="TravelIconImg" width="33.5" height="29.5"/>
+        <image name="UncompletedStampDamyang" width="215" height="214.5"/>
+        <image name="UncompletedStampMokpo" width="214.5" height="214.5"/>
+        <image name="UncompletedStampYeosu4x" width="214.5" height="215"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="White">
