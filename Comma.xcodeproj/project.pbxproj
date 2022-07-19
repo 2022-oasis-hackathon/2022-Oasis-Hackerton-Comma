@@ -22,6 +22,7 @@
 		F0A2B6BE2886708B00B33A83 /* MyPageTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6BC2886708B00B33A83 /* MyPageTopCell.xib */; };
 		F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */; };
 		F0A2B6C22886709900B33A83 /* MyPageBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */; };
+		F0A2B6C42886779500B33A83 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A2B6C32886779500B33A83 /* MyProfileVC.swift */; };
 		F0A7474C28852124009E4DA6 /* AppleSDGothicNeoEB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */; };
 		F0A7474D28852124009E4DA6 /* AppleSDGothicNeoH.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */; };
 		F0A7475028852250009E4DA6 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7474F28852250009E4DA6 /* FontManager.swift */; };
@@ -58,6 +59,7 @@
 		F0A2B6BC2886708B00B33A83 /* MyPageTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageTopCell.xib; sourceTree = "<group>"; };
 		F0A2B6BF2886709900B33A83 /* MyPageBottomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageBottomCell.swift; sourceTree = "<group>"; };
 		F0A2B6C02886709900B33A83 /* MyPageBottomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageBottomCell.xib; sourceTree = "<group>"; };
+		F0A2B6C32886779500B33A83 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		F0A7474A28852124009E4DA6 /* AppleSDGothicNeoEB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoEB.ttf; sourceTree = "<group>"; };
 		F0A7474B28852124009E4DA6 /* AppleSDGothicNeoH.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoH.ttf; sourceTree = "<group>"; };
 		F0A7474F28852250009E4DA6 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				F0A7478328855D74009E4DA6 /* LoginVC.swift */,
 				F08057D528859D0900CB0C35 /* NameVC.swift */,
 				F0A2B6B828866ECB00B33A83 /* MyPageVC.swift */,
+				F0A2B6C32886779500B33A83 /* MyProfileVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				F41F021128843F6C00095124 /* SplashVC.swift in Sources */,
 				F0A2B6C12886709900B33A83 /* MyPageBottomCell.swift in Sources */,
 				F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */,
+				F0A2B6C42886779500B33A83 /* MyProfileVC.swift in Sources */,
 				F0A7475028852250009E4DA6 /* FontManager.swift in Sources */,
 				F0A7475428852275009E4DA6 /* UserDefaultsManager.swift in Sources */,
 				F0A2B6B928866ECB00B33A83 /* MyPageVC.swift in Sources */,

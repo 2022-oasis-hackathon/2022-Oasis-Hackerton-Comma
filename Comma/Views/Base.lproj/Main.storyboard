@@ -434,15 +434,35 @@
             </objects>
             <point key="canvasLocation" x="1800.0000000000002" y="2383.9285714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--My ProfileVC-->
         <scene sceneID="Co3-bO-1MH">
             <objects>
-                <viewController id="8iD-Zp-Ihf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8iD-Zp-Ihf" customClass="MyProfileVC" customModule="Comma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VMx-ht-ETQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjW-v2-1lI">
+                                <rect key="frame" x="24" y="68" width="13" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.left" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나의 프로필" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvi-cq-8Au">
+                                <rect key="frame" x="168" y="68.5" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aGs-ka-JNO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RjW-v2-1lI" firstAttribute="top" secondItem="aGs-ka-JNO" secondAttribute="top" constant="24" id="ArQ-db-Lj9"/>
+                            <constraint firstItem="Rvi-cq-8Au" firstAttribute="centerY" secondItem="RjW-v2-1lI" secondAttribute="centerY" id="Bmh-Gm-VYM"/>
+                            <constraint firstItem="Rvi-cq-8Au" firstAttribute="centerX" secondItem="VMx-ht-ETQ" secondAttribute="centerX" id="pIl-ti-7Re"/>
+                            <constraint firstItem="RjW-v2-1lI" firstAttribute="leading" secondItem="aGs-ka-JNO" secondAttribute="leading" constant="24" id="xF8-mW-bOq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lXD-zD-gj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -502,6 +522,7 @@
         <image name="MyPageIconImg" width="28.5" height="28.5"/>
         <image name="OnboardingTitleImage" width="444.5" height="245"/>
         <image name="TravelIconImg" width="33.5" height="29.5"/>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
