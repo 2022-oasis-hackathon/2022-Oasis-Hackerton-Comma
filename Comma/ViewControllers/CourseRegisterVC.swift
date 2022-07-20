@@ -10,6 +10,5 @@ import UIKit
 class CourseRegisterVC: UIViewController {
     override func viewDidLoad() {
        super.viewDidLoad()
-        
    }
 }

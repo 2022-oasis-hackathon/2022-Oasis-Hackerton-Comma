@@ -57,8 +57,12 @@ class NameVC: UIViewController {
         // UIButton
         nextButton.rx.tap
             .subscribe(onNext: { _ in
-                // TODO: 화면 이동
+                let courseRegisterVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "tabbarMain") as! UITabBarController
                 
+                courseRegisterVC.selectedIndex = 1
+                courseRegisterVC.modalTransitionStyle = .crossDissolve
+                courseRegisterVC.modalPresentationStyle = .overFullScreen
+                self.present(courseRegisterVC, animated: true)
             })
             .disposed(by: disposeBag)
         
