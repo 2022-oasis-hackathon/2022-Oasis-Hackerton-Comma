@@ -43,9 +43,16 @@ $ node index.js
 
 ## 프로젝트 사용법 (Getting Started)
 
-**마크다운 문법을이용하여 자유롭게 기재**
+Xcode를 통해 iPhone에 설치 후, 설치된 APP을 실행한다.
+
+현재 webview의 서버는 개인서버에 올려져 있으니, 주소를 변경을 하고 싶으면 `Comma/Manager/WebViewManager.swift`에서 하면 된다.
  
 ## 팀 정보 (Team Information)
+
+- 임채승
+- 최명선
+- 김서하
+- 황지우
 
 ## 저작권 및 사용권 정보 (Copyleft / End User License)
 
