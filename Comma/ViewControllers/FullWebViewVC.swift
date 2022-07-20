@@ -14,10 +14,8 @@ class FullWebViewVC: UIViewController {
     // UILabel
     @IBOutlet weak var titleLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     @IBAction func tapBackButton(_ sender: UIButton) {
@@ -31,10 +29,5 @@ extension FullWebViewVC: WKScriptMessageHandler {
         if let body = message.body as? String, body == "back" {
             self.dismiss(animated: true)
         }
-//        webView.evaluateJavaScript("document.getElementById('someElement').innerText") { (result, error) in
-//            if error == nil {
-//                print(result)
-//            }
-//        }
     }
 }

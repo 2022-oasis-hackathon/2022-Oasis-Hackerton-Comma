@@ -37,6 +37,7 @@ class LoginVC: UIViewController {
         initUI()
         action()
         playVideo()
+        self.removeFromParent()
     }
     
     private func initUI() {

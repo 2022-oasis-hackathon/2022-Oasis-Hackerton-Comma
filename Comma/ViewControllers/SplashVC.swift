@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 
 class SplashVC: UIViewController {
-
+    // AnimationView
     private var animationView: AnimationView?
         
     public override func viewDidAppear(_ animated: Bool) {
@@ -23,7 +23,9 @@ class SplashVC: UIViewController {
             let pageVC = OnBoardingPageVC(transitionStyle: .scroll, navigationOrientation: .horizontal, options: .none)
             pageVC.modalPresentationStyle = .overFullScreen
             pageVC.modalTransitionStyle = .crossDissolve
-            self.present(pageVC, animated: true, completion: nil)
+            self.present(pageVC, animated: true) {
+                self.animationView?.isHidden = true
+            }
         }
     }
 }

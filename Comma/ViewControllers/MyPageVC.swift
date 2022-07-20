@@ -43,7 +43,6 @@ class MyPageVC: UIViewController {
         myPageTableView.register(UINib(nibName: "MyPageTopCell", bundle: nil), forCellReuseIdentifier: "MyPageTopCell")
         myPageTableView.register(UINib(nibName: "MyPageBottomCell", bundle: nil), forCellReuseIdentifier: "MyPageBottomCell")
     }
-
 }
 
 extension MyPageVC: UITableViewDelegate, UITableViewDataSource {
@@ -85,8 +84,5 @@ extension MyPageVC: UITableViewDelegate, UITableViewDataSource {
             let myPassportVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MyPassportVC") as! MyPassportVC
             self.navigationController?.pushViewController(myPassportVC, animated: true)
         }
-        
-        
     }
-    
 }
