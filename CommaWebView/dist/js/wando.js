@@ -86,3 +86,7 @@ $("#back_cover").on("click", function () {
     alert(error);
   }
 });
+
+$("#second-img").on("click", function () {
+  location.href = "./wando_work.html";
+});
