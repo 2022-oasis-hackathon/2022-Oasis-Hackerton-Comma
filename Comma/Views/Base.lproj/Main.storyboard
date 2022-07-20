@@ -782,6 +782,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="ht4-Q6-3Kf" id="cNf-d8-MnS"/>
                         <outlet property="firstTitleLabel" destination="2Y5-Zp-5GA" id="V6X-xM-v80"/>
                         <outlet property="locationSearchButton" destination="W1z-F2-F2O" id="GFa-rw-6L9"/>
                         <outlet property="secondTitleLabel" destination="aOX-yx-0dV" id="8JE-KD-AHA"/>
