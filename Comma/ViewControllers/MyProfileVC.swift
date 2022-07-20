@@ -19,8 +19,6 @@ class MyProfileVC: UIViewController {
     // UIButton
     @IBOutlet weak var modifyButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
-    
-    // Variables
 
     // Constants
     let TITLE_LABEL_FONT_SIZE: CGFloat = 18
@@ -87,6 +85,7 @@ extension MyProfileVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.view.endEditing(true)
     }

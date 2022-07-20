@@ -39,6 +39,7 @@ class NameVC: UIViewController {
         super.viewDidLoad()
         initUI()
         action()
+        self.removeFromParent()
     }
     
     private func initUI() {

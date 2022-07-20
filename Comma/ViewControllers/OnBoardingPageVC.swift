@@ -26,6 +26,7 @@ class OnBoardingPageVC: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         makeOnboardingPages()
+        self.removeFromParent()
     }
     
     private func makeOnboardingPages() {

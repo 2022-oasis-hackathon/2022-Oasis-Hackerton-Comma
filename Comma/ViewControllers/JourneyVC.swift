@@ -31,9 +31,7 @@ class JourneyVC: UIViewController {
     }
     
     @IBAction func tapBackButton(_ sender: UIButton) {
-        // TODO: 뒤로가기 버튼 이벤트 처리
     }
-    
 }
 
 extension JourneyVC: WKScriptMessageHandler {

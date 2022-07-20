@@ -24,6 +24,7 @@ class MyLocationVC: UIViewController {
     let LABEL_FONT_SIZE: CGFloat = 24
     let BUTTON_FONT_SIZE: CGFloat = 16
     let BUTTON_CORNER_RADIUS: CGFloat = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
