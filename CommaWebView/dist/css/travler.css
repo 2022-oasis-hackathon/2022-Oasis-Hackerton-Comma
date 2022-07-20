@@ -4,7 +4,7 @@ body {
 }
 .top {
   z-index: 1000;
-  margin-top: 117px;
+  margin-top: 67px;
   top: 0;
   margin-left: 9px;
   position: absolute;
@@ -42,7 +42,7 @@ body {
 }
 
 .swiper-button-wapper div {
-  margin-top: -6px;
+  margin-top: 18px;
   color: black;
   --swiper-navigation-size: 10;
 }
@@ -57,7 +57,7 @@ body {
 
 .swiper-pagination {
   width: 24%;
-  top: 226px;
+  top: 151px;
   font-weight: 300;
 }
 
@@ -83,5 +83,5 @@ body {
   width: 100%;
   text-align: center;
   font-size: 18px;
-  margin-top: 68px;
+  margin-top: 28px;
 }
