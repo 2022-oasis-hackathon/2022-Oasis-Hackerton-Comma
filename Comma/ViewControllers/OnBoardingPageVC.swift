@@ -128,8 +128,10 @@ extension OnBoardingPageVC: UIPageViewControllerDelegate {
         if currentIndex == pages.count - 1 {
             // show button
             self.showButton()
+            self.pageControl.isHidden = true
         } else {
             self.hideButton()
+            self.pageControl.isHidden = false
         }
         
         UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: self.view.layoutIfNeeded, completion: { _ in
