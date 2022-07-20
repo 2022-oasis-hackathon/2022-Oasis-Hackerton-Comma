@@ -16,7 +16,7 @@ class MyLocationVC: UIViewController {
     
     // UIButton
     @IBOutlet weak var locationSearchButton: UIButton!
-    
+    @IBOutlet weak var backButton: UIButton!
     // RxSwift
     let disposeBag = DisposeBag()
     
@@ -50,6 +50,11 @@ class MyLocationVC: UIViewController {
                     mapVC.modalPresentationStyle = .overFullScreen
                     presentView?.present(mapVC, animated: false, completion: nil)
                 }
+            })
+            .disposed(by: disposeBag)
+        backButton.rx.tap
+            .subscribe(onNext: { _ in
+                self.dismiss(animated: true)
             })
             .disposed(by: disposeBag)
     }
