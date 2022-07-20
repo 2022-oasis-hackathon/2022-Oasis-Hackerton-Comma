@@ -58,6 +58,7 @@ class NameVC: UIViewController {
         nextButton.rx.tap
             .subscribe(onNext: { _ in
                 // TODO: 화면 이동
+                
             })
             .disposed(by: disposeBag)
         
