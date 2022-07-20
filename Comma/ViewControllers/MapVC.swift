@@ -20,8 +20,8 @@ class MapVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(2500)) {
-            self.showStampScreen()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(3000)) {
+//            self.showStampScreen()
         }
     }
     
