@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		09F31F10344434C7F8DA271F /* Pods_Comma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3932886EFEACEC6D8922245 /* Pods_Comma.framework */; };
 		F007F6AE288703B100B837C1 /* MyLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F007F6AD288703B100B837C1 /* MyLocationVC.swift */; };
-		F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F08057D3288593E200CB0C35 /* Wando.mp4 */; };
 		F08057D628859D0900CB0C35 /* NameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08057D528859D0900CB0C35 /* NameVC.swift */; };
 		F0984ED72881846500707FC9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0984ED62881846500707FC9 /* GoogleService-Info.plist */; };
 		F09AB6D4288175F0009D163E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09AB6D3288175F0009D163E /* AppDelegate.swift */; };
@@ -57,7 +56,6 @@
 		B3932886EFEACEC6D8922245 /* Pods_Comma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95852949A4124799DE387DE /* Pods-Comma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comma.release.xcconfig"; path = "Target Support Files/Pods-Comma/Pods-Comma.release.xcconfig"; sourceTree = "<group>"; };
 		F007F6AD288703B100B837C1 /* MyLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationVC.swift; sourceTree = "<group>"; };
-		F08057D3288593E200CB0C35 /* Wando.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Wando.mp4; path = CommaWebView/dist/videos/Wando.mp4; sourceTree = SOURCE_ROOT; };
 		F08057D528859D0900CB0C35 /* NameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameVC.swift; sourceTree = "<group>"; };
 		F0984ED62881846500707FC9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F09AB6D0288175F0009D163E /* Comma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comma.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +98,7 @@
 		F41F02162884476900095124 /* logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
 		F44B33312886C90500F1C282 /* JourneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyVC.swift; sourceTree = "<group>"; };
 		F47A6AF6288735FB007F2A8D /* ArticleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleVC.swift; sourceTree = "<group>"; };
+		F4FB04F7288817A1007C6828 /* LoginBackgroundVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = LoginBackgroundVideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +162,7 @@
 				F09AB6E1288175F1009D163E /* Info.plist */,
 				F0984ED62881846500707FC9 /* GoogleService-Info.plist */,
 				F41F02162884476900095124 /* logo.json */,
-				F08057D3288593E200CB0C35 /* Wando.mp4 */,
+				F4FB04F7288817A1007C6828 /* LoginBackgroundVideo.mp4 */,
 			);
 			path = Comma;
 			sourceTree = "<group>";
@@ -306,7 +305,6 @@
 				F09AB6DD288175F1009D163E /* Assets.xcassets in Resources */,
 				F0A2B6D028867DD100B33A83 /* MyProfileBottomCell.xib in Resources */,
 				F0A2B6C22886709900B33A83 /* MyPageBottomCell.xib in Resources */,
-				F08057D4288593E200CB0C35 /* Wando.mp4 in Resources */,
 				F0A2B6C828867DA900B33A83 /* MyProfileTopCell.xib in Resources */,
 				F09AB6DB288175F0009D163E /* Main.storyboard in Resources */,
 				F41F02172884476900095124 /* logo.json in Resources */,

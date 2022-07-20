@@ -74,7 +74,7 @@ class LoginVC: UIViewController {
     }
     
     private func playVideo() {
-        guard let path = Bundle.main.path(forResource: "Wando", ofType: "mp4") else { return }
+        guard let path = Bundle.main.path(forResource: "LoginBackgroundVideo", ofType: "mp4") else { return }
         
         let player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerLayer = AVPlayerLayer(player: player)
