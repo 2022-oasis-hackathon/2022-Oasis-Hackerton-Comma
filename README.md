@@ -18,7 +18,7 @@
 
 - Mac Book
 - XCode
-- iOS 15 이상
+- iOS 14 이상
 
 ## 기술 스택 (Technique Used) 
 
@@ -26,11 +26,11 @@
 
 - nodejs 14.x 이상
 - express을 사용한 프레임워크
- 
+
 ### Front-end
 
 - jQuery, fullPage, swiger.js를 사용함
-- UI framework를 사용함
+- Swift, UIKit, CocoaPods, RxSwift, RxCocoa, RxKeyboard
 
 ## 설치 안내 (Installation Process)
 
@@ -46,7 +46,7 @@ $ node index.js
 Xcode를 통해 iPhone에 설치 후, 설치된 APP을 실행한다.
 
 현재 webview의 서버는 개인서버에 올려져 있으니, 주소를 변경을 하고 싶으면 `Comma/Manager/WebViewManager.swift`에서 하면 된다.
- 
+
 ## 팀 정보 (Team Information)
 
 - 임채승
